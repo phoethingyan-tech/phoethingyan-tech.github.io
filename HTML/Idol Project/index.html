@@ -153,22 +153,33 @@
 
 
         <!-- This is Comment Part -->
+       
+        <h2 align="Center" id="Comment"><u>Leave a Comment</u></h2>   
+        <form action="request.php" method="get">
+            <table align="center" border="0" cellspacing="1" cellpadding="10">   
+                <tbody>  
+                    <tr>
+                        <td><label for="name">Name :    </label></td>
+                        <td><input type="name" name="name" id="name"></td>                     
+                    </tr>
 
-        <h2 id="Comment" align="center"><u>Leave a Comment</u></h2>    
+                    <tr>
+                        <td><label for="email">Email :  </label></td>
+                        <td><input type="email" name="email" id="email"></td>
+                    </tr>
 
-        <form align="center" action="request.php" method="post">
-            <label for="name">Name :    </label>
-            <input type="name" name="name" id="name">
-            <br><br>
-            <label for="email">Email :  </label>
-            <input type="email" name="email" id="email">
-            <br><br>
-            <label for="textarea">Comment : </label>
-            <textarea name="textarea" id="textarea" rows="8"></textarea>
-            <br><br>
-            <button type="submit">Add</button>
-        </form>
-        <br>
+                    <tr>
+                        <td><label for="textarea">Comment : </label></td>
+                        <td><textarea name="textarea" id="textarea" rows="8"></textarea></td>
+                    </tr>
+                    
+                    <tr>
+                        <td></td>
+                        <td align="center" colspan=""><button type="submit">Add</button></td>
+                    </tr>                                       
+                </tbody>  
+            </table> 
+        </form>       
         <hr>
     </div>
 
