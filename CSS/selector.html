@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* This is universal selector */
+        *{
+            color: red;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* There are element selector */
+        h1{
+            color: black;
+        }
+
+        p{
+            background-color: aqua;
+        }
+
+        /* This is id element selector */
+        #nose{
+            background-color: pink;
+            font-size: 30px;
+        }
+
+        /* This is Class element selector */
+        .eye-makeup{
+            color: brown;
+            background-color: white;
+        }
+
+        /* This is Attribute Selecter */
+        a[title="Google Website"]{
+            font-size: 32 px;
+        }
+
+        /* This is Attribute Selecter */
+        input[type="email"]{
+            background-color: brown;
+        }
+        /* This is Desendant Selector */
+        div p{
+            background-color: yellow;
+        }
+
+        /* This is Child Selector */
+        div>p{
+            color: black;
+        }        
+    </style>
+</head>
+<body>
+    <h1>Selector</h1>
+    <p>Universal Selector</p>
+    <p class="eye-makeup">Hello CSS</p>
+    <p id="nose">Nose</p>
+    <p class="eye-makeup">Left Eye</p>
+    <p class="eye-makeup">Right Eye</p>
+
+    <a href="" title="Google Website">Google</a>
+    <input type="email" name="" id="">
+    <input type="text" name="" id="">
+
+    <div>        
+        <p>This is Paragraph 1.</p>
+        <p>This is Paragraph 2.</p>
+        <p>This is Paragraph 3.</p>
+        <span>
+            <p>This is Paragraph 4.</p>            
+        </span>
+        <p>This is Paragraph 5.</p>
+    </div>
+</body>
+</html>
