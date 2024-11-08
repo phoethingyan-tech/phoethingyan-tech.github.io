@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 30px;
+            padding: 100px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        .color1{
+            color: rgb(255, 0, 0);
+            /* 
+                Hexa code format 
+                0 1 2 3 4 5 6 7 8 9 A B C D E F
+                0 - အနည်းဆုံး
+                F - အများဆုံး
+                RGB - Red Greeen Blue
+                R       G       B 
+                0-9A-F  0-9A-F  0-9A-F
+                #00 FF 00
+                FF = 15*16 + 15 =255
+                CC = 12*16 + 12 =204
+                88 = 8*16  + 8  = 136
+                00 = 0
+
+                #ffffff -> white -#fff
+                #000000 -> Black -#000
+                #888888 -> Gray  -#888
+                #00FF00 -> Green
+                #FF0000 -> Red
+                #0000FF -> Blue
+            */
+            background-color: #f08800;
+        }
+
+        .color2{
+            /* background-color:rgb(255, 0, 0); */
+            background-color: rgba(255, 0, 0, 0.8);
+        }
+
+        .color3{
+            /* 
+                0deg= to top
+                90deg= to right
+                180deg= to bottom
+                270deg= to left
+                45deg= to bottom right
+                135eg= to bottom right
+                225deg= to bottom left
+                315deg= to top left                        
+            */
+            background: linear-gradient(to top left, Red, Blue);
+        }
+    </style>
+</head>
+<body>
+    <div class="color1">Color 1</div>
+    <div class="color2">Color 2</div>
+    <div class="color3">Color 3</div>
+</body>
+</html>
