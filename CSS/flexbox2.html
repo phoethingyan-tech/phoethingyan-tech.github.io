@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: aqua;
+            height: 200px;
+
+            justify-content: flex-start;
+            /* 
+                Justify-Content သည် ဘေးဘယ်ညာကို အလုပ်လုပ်
+                    -   flex-start -> ဘယ်ဘက်အပေါ်မှာရှိနေမယ်
+                    -   flex-end   -> ညာဘက်အပေါ်မှာရှိနေမယ်
+                    -   center သည် အလယ်အပေါ်မှာရှိနေမယ်
+            */
+
+            align-items: center;
+
+            /* 
+                align-items သည် အပေါ်အောက် အလုပ်လုပ်
+                        flex-start -> ဘယ်ဘက်အပေါ်မှာရှိနေမယ်
+                    -   flex-end   -> ဘယ်ဘက်အောက်မှာရှိနေမယ်
+                    -   center သည် ဘယ်ဘက်အလယ်မှာရှိနေမယ်  
+            */
+        }
+        .flex-item {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <p class="flex-item">Item 1</p>
+        <p class="flex-item">Item 2</p>
+        <p class="flex-item">Item 3</p>
+    </div>
+    
+</body>
+</html>

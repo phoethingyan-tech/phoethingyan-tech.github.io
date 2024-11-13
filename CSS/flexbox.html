@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex-container {
+            display: flex;
+
+            /* 
+                nowrap  -> default screen ထဲမှာ ဆံ့အောင်ပြပေးတာ 
+                wrap    -> screen ထဲမှာမဆံ့ရင် အောက်ဆင်းပြီးပြပေးတာ
+                wrap-reverse    -> wrap အတိုင်းပဲ  ပြောင်းပြန်စီပေး
+             */
+            flex-wrap: wrap;
+
+            /* 
+                flex-direction
+                    -  row -> ဘယ်ကနေ ညာကိုစီ
+                    -  row-reverse -> ညာကနေ ဘယ်ကိုစီ
+                    -  column -> အပေါ်ကနေအောက်ကိုစီ
+                    -  column -> colum ကိုပြောင်းပြန်စီပေး
+            */
+            flex-direction: row;
+
+            /* 
+                justic-content
+                    -   flex-start -> ဘယ်ညီစီ
+                    -   flex-end   -> ညာညီစီ
+                    -   center     -> အလယ်ညီစီ
+                    -   space-between -> flex-item တွေကို flex-container အတွင်း
+                    ဘယ်ကနေ ညာထိ အပြည့်ယူ ကြားထဲမှာ Space အလွတ်ညီညီမျှမျှထားပေး
+            */
+
+            justify-content: space-between;
+            background-color: red;
+        }
+
+        .flex-container .flex-item {
+            background-color: white;
+            width: 150px;
+            margin: 50px;
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>Title 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore vero ipsam amet eius officia ratione provident sed velit voluptatem? Excepturi, modi totam voluptas perspiciatis nam veritatis omnis ipsa provident eligendi necessitatibus incidunt impedit, voluptatem repellat delectus reiciendis tempora maiores. Vero optio vitae dignissimos impedit architecto blanditiis atque, inventore ab ducimus?</p>
+        </div>
+
+        <div class="flex-item">
+            <h3>Title 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore vero ipsam amet eius officia ratione provident sed velit voluptatem? Excepturi, modi totam voluptas perspiciatis nam veritatis omnis ipsa provident eligendi necessitatibus incidunt impedit, voluptatem repellat delectus reiciendis tempora maiores. Vero optio vitae dignissimos impedit architecto blanditiis atque, inventore ab ducimus?</p>
+        </div>
+
+        <div class="flex-item">
+            <h3>Title 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore vero ipsam amet eius officia ratione provident sed velit voluptatem? Excepturi, modi totam voluptas perspiciatis nam veritatis omnis ipsa provident eligendi necessitatibus incidunt impedit, voluptatem repellat delectus reiciendis tempora maiores. Vero optio vitae dignissimos impedit architecto blanditiis atque, inventore ab ducimus?</p>
+        </div>
+
+        <div class="flex-item">
+            <h3>Title 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore vero ipsam amet eius officia ratione provident sed velit voluptatem? Excepturi, modi totam voluptas perspiciatis nam veritatis omnis ipsa provident eligendi necessitatibus incidunt impedit, voluptatem repellat delectus reiciendis tempora maiores. Vero optio vitae dignissimos impedit architecto blanditiis atque, inventore ab ducimus?</p>
+        </div>
+
+        <div class="flex-item">
+            <h3>Title 5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore vero ipsam amet eius officia ratione provident sed velit voluptatem? Excepturi, modi totam voluptas perspiciatis nam veritatis omnis ipsa provident eligendi necessitatibus incidunt impedit, voluptatem repellat delectus reiciendis tempora maiores. Vero optio vitae dignissimos impedit architecto blanditiis atque, inventore ab ducimus?</p>
+        </div>
+
+        <div class="flex-item">
+            <h3>Title 6</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore vero ipsam amet eius officia ratione provident sed velit voluptatem? Excepturi, modi totam voluptas perspiciatis nam veritatis omnis ipsa provident eligendi necessitatibus incidunt impedit, voluptatem repellat delectus reiciendis tempora maiores. Vero optio vitae dignissimos impedit architecto blanditiis atque, inventore ab ducimus?</p>
+        </div>
+
+        <div class="flex-item">
+            <h3>Title 7</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore vero ipsam amet eius officia ratione provident sed velit voluptatem? Excepturi, modi totam voluptas perspiciatis nam veritatis omnis ipsa provident eligendi necessitatibus incidunt impedit, voluptatem repellat delectus reiciendis tempora maiores. Vero optio vitae dignissimos impedit architecto blanditiis atque, inventore ab ducimus?</p>
+        </div>
+
+        <div class="flex-item">
+            <h3>Title 8</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore vero ipsam amet eius officia ratione provident sed velit voluptatem? Excepturi, modi totam voluptas perspiciatis nam veritatis omnis ipsa provident eligendi necessitatibus incidunt impedit, voluptatem repellat delectus reiciendis tempora maiores. Vero optio vitae dignissimos impedit architecto blanditiis atque, inventore ab ducimus?</p>
+        </div>
+    </div>
+</body>
+</html>

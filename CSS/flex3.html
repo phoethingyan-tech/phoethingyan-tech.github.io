@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            background-color: #333;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;   /* list ဖျောက်ထားခြင်း */
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;   /* Underline ဖျောက်ထားခြင်း */
+            font-size: 18px;
+        }
+
+        .nav-links li a:hover {
+            color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">HeinLearn</div>
+        <ul class="nav-links">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>            
+        </ul>
+    </nav>
+    
+</body>
+</html>
