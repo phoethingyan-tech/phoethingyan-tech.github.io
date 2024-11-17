@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+            @medis mediatype and condition {
+            css code
+        }
+        Media type
+            all- အားလုံး
+            screen- Computer screen, table, phone
+            print- printer
+            speech- screen readers
+        */
+        .container {
+            padding: 20px;
+        }
+
+        .card {
+            background-color: brown;
+            margin: 10px;
+            padding: 20px;
+            border-radius: 8px;
+            font-size: 30px;
+        }
+
+        /* desktop */
+        @media screen and (min-width:1024px) {
+            .card-container{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+        /* Tablet */
+        @media screen and (min-width:768px) and (max-width:1023px) {
+            .card-container{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .card {
+                font-size: 24px;
+            }
+            
+        }
+
+        /* Tablet */
+        @media screen and (max-width:767px) {
+            .card-container{
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                font-size: 18px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card-container">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+            <div class="card">Card 4</div>
+            <div class="card">Card 5</div>
+            <div class="card">Card 6</div>
+        </div>        
+    </div>
+</body>
+</html>
