@@ -286,3 +286,46 @@ body {
     align-items: center;
     margin-right: 20px;
 }
+
+/* Cotact Form */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #1a1814;
+    color: white;
+}
+
+/* Footer */
+
+.footer {    
+    background-color: black;
+    padding: 50px 0;
+    color: white;
+    text-align: center;    
+}
+
+.footer p {
+    padding-bottom: 10px;
+}
+
+.footer-title {
+    font-weight: bold;
+}
+
+.footer .dev {
+    text-decoration: none;
+    color: #cda45e;
+    font-weight: bold;
+}

@@ -16,19 +16,19 @@
         <div class="nav-menu">
             <ul>
                 <li>
-                    <a href="">Home</a>
+                    <a href="#home">Home</a>
                 </li>
 
                 <li>
-                    <a href="">Menu</a>
+                    <a href="#menu">Menu</a>
                 </li>
 
                 <li>
-                    <a href="">About</a>
+                    <a href="#about">About</a>
                 </li>
 
                 <li>
-                    <a href="">Contact</a>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -54,7 +54,7 @@
      </div>
 
      <!-- About Kyaw Cafe` -->
-    <div class="about">
+    <div class="about" id="about">
         <h2 class="menu-heading">About Kyaw Cafe`</h2>
         <p class="menu-about">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt culpa, sequi voluptatem excepturi vero, possimus consequatur magnam nostrum distinctio, qui explicabo vel? Atque iusto est corrupti nulla distinctio id consequatur itaque, earum ipsum nostrum vitae corporis modi sunt rerum praesentium aliquam. Ratione, dolorum. Optio in voluptatum tenetur? Facilis reiciendis, quae accusantium veritatis aperiam veniam perspiciatis, cumque praesentium consequuntur ducimus incidunt, doloribus inventore deserunt vitae temporibus id atque beatae! Autem, praesentium. Obcaecati, eius reiciendis exercitationem modi aperiam tenetur nulla earum fuga mollitia necessitatibus dignissimos ex accusantium illum harum vitae assumenda culpa facere et? Ipsa asperiores unde, earum illum ratione eius. Dicta!</p>
     </div>
@@ -79,7 +79,7 @@
     </div>
 
     <!-- Our popular Menu -->
-     <h1 class="our-menu-title">Our Popular Menu</h1>
+     <h1 class="our-menu-title" id="menu">Our Popular Menu</h1>
      <div class="our-menu">
 
         <div class="menu-item">
@@ -129,7 +129,7 @@
     
      <!--  Contact Us -->
     
-     <div class="contact-us">
+     <div class="contact-us" id="contact">
         <h1>Contact Us</h1>
         <div class="map">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.3484197040775!2d96.114780976151!3d21.921153056529768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb73102e448657%3A0x17475e3a53b16f0d!2sKyaw%20Cafe!5e0!3m2!1smy!2smm!4v1732606880496!5m2!1smy!2smm" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -169,10 +169,35 @@
 
             </div>
             <div class="contact-form">
+                <form action="">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="name" name="name" id="name">
+                    </div>
 
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <button class="btn">Send</button>
+                </form>
             </div>
          </div>
-
      </div>
+
+     <!-- Footer -->
+     <footer class="footer">
+        <p>
+            &copy;Copyright
+            <span class="footer-title">Kyaw Cafe`.</span>
+            All Right Reserved
+        </p>
+        <p>Design By <a href="https://phoethingyan-tech.github.io" target="_blank" class="dev">PhoeThigyan</a> </p>
+     </footer>
 </body>
 </html>
