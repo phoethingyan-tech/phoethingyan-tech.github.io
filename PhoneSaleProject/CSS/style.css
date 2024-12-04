@@ -16,7 +16,7 @@ header {
     padding: 30px 20px;
     justify-content: end;
     align-items: center;
-    background-color: #161616;
+    /* background-color: #424242; */
 }
 
 .brand {
@@ -102,7 +102,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 50px 0 20px 70px;
-    padding: 30px;  
+    padding: 30px;     
 }
 
 .product-search {
@@ -112,7 +112,8 @@ header {
     padding: 5px 10px;
     font-size: 20px;
     border-radius: 6px;
-    color: black;
+    color: white;
+    background-color: #161616;
 }
 
 .search-box a {    
@@ -195,18 +196,96 @@ header {
     background-color: #ac3202;
 }
 
-.best-seller-container {
-    padding-top: 50px;    
-}
-
-.best-seller-container h2 {
-    font-size: 3.5em;
+.best-seller h2 {
+    font-size: 3em;
     color: white;
-    text-align: left;
-    padding: 30px;
+    margin: 100px 30px 30px 30px;
+    padding-bottom: 30px;
+    text-align: start;
 }
 
-.best-seller-container a{
+.viewmore {
+    display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px 0 70px 0;
+}
+
+/* This is Contact Us */
+.contact-us {
+    font-size: 3.5em;
+    margin: 100px 0 50px 0;
+    color: white;
+    text-align: center;
+}
+
+.map {
+    margin: 0 70px;
+    text-align: center;
+}
+
+.contact-mini {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info {
+    margin: 0 30px;
+    padding: 0 30px;    
+    /* background-color: rgba(248, 248, 248, 0.1) */   
+    padding-left: 70px;
+}
+
+.contact-info p {
+    font-size: 1.3em;
+    color: white;
+    padding: 10px;
+   
+}   
+
+.contact-info a {
+    text-decoration: none;
+    /* font-size: 1.3em; */
+    color: white;
+}
+
+.contact-form {
+    margin: 0 40px;
+    padding: 0 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label{
+   display: block;
+   font-weight: bold;
+   padding-bottom: 5px;
+   font-size: 1.3em;
+   color: white;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #161616;
+    color: white;
+    font-size: 1.2em;
+}
+
+.footer {
+    background-color: #424242;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer span {
+    color: white;
+    font-size: 1.3em;    
 }
