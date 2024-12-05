@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Operator
+        //Assignment Operator (=)
+        let x = 12;
+        console.log(x);
+
+        //Addition Operator (+)
+        let three = 2 + 1;
+        console.log(three);
+        let four = three + 1;
+        console.log(four);
+        let three_one = 'three' + 1;
+        console.log(three_one);
+        let str = '23' + '32';
+        console.log(str);
+        let number = 5;
+        number += 10; //number = number + 10;
+        console.log(number);
+
+        //Substration operator (-)
+        let two = 3 - 1;
+        console.log(two);
+        let five = '6' - '1';   //(-) မှာ အလုပ်လုပ်မယ်
+        console.log(five);
+        let num = 25;
+        num -=5; //num = num - 5;
+        console.log (num);
+
+        //Division Operator (/)
+        let div1 = 20 / 5;
+        console.log(div1);
+        let div2 = 20 / 7;
+        console.log(div2);
+        console.log(div2.toFixed(2));
+        let div3 = 1 / 0;
+        console.log(div3);
+        let div = 20;
+        div /= 4;   //div =div / 4;
+        console.log(div);
+
+        //Remainder Operator (%)
+        let rem1= 20 % 5;
+        console.log(rem1);
+        let rem2 = 20 % 7;
+        console.log(rem2);
+        let rem3 = 1 % 0;
+        console.log(rem3); // Not a Mumber
+        let rem = 25;
+        rem %= 2; //rem = rem % 2;
+        console.log(rem);
+
+
+        
+        //Multuplication operator (*)
+        let mul1= 12 * 12;
+        console.log(mul1);
+        let mul2= -12 * 12;
+        console.log(mul2);
+        let mul = 25;
+        mul *=5;
+        console.log(mul);
+
+        //Exponentiation Operator (**)
+        let exp1 = 2 ** 2;
+        console.log(exp1);
+        let exp2 = 4 ** 6; 
+        console.log(exp2);
+
+        //Precendence
+        // * / %
+        // + -
+        // =
+        let total= 1 * 2 + 5 /  2 % 2;
+        console.log(total);
+
+        // Comparisons operator
+        let n = 12;
+        let m = '12';
+        console.log(n < 5);
+        console.log(n > 5);
+        console.log(n < 12);
+        console.log(n <=12);
+        console.log(n > 12);
+        console.log(m >= 12);
+        console.log(m == n);
+        console.log(m === n);
+        console.log(m != n);
+        console.log(m !== n);
+        console.log(2 != '2');
+        console.log(2 !== '2');        
+
+
+        // logical operator
+        // AND && 
+        // OR ||
+        // NOT !
+
+        console.log(12 < 13 && 15 > 11 && 10 > 5);
+                    //true && true && true
+                    // 1 x 1 x 1
+        console.log(10 < 12 || 13 > 12 || 23 < 21);
+                    // true || true || true
+                    // 1 + 1 + 0
+    </script>
+</body>
+</html>
