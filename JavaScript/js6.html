@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //String
+
+        let firstname = 'Kyaw';
+        let lastname = 'Moe Htun';
+        console.log(typeof(firstname));
+        console.log(typeof(lastname));
+        console.log(firstname.length);
+        console.log(lastname.length);
+
+        let fullName = firstname.concat(' ',lastname);
+        console.log(fullName);
+        console.log("My name is "+fullName);
+        console.log(`My name is fullname`);
+        console.log(`My name is ${fullName}`);
+
+        console.log(fullName[5]);
+        console.log(fullName.toLowerCase());
+        console.log(fullName.toUpperCase());
+        console.log(fullName.substr(5,3)); //substr (start, number);
+        let job = ' Web Developer ';
+        console.log(job);
+        console.log(job.trim());  //Spacing Delete start and end like password
+
+        // String ထဲက နံပါတ်ကို ရှာချင်ဲတဲ့အခါသုံးမယ်
+
+        let ser = "javasript is funny!";
+        let ser_result = ser.search('funny');
+        console.log(ser_result);
+
+        //String ထဲက လဲထည့်ချင်တဲ့အခါ အသုံးပြုမယ်
+        let rep = 'I want to visit Yangon';
+        let rep_result = rep.replace('Yangon', 'Mandalay');
+        console.log(rep_result);
+
+        // This is remove , and replace none
+        let fees = '350,000,000';
+        console.log(fees);
+        fees=fees.replace(/\,/g,'');  // "/ /" သည် reg ရဲ့ အဖွင့်အပိတ်မှာသုံး။ \, သည် , ကိုရှာ g သည် Global
+        console.log(fees);
+
+        let phno = "09 977 213 234";
+        console.log(phno);
+        phno = phno.replace(/\s+/g, ''); // s သည် white space နဲ့ tab ကိုရှာ + သည် one or more ကိုဆိုလိုသည်
+        console.log(phno);
+
+        let spa_com = ' 09, 234 2455 22  ';
+        console.log(spa_com);
+        spa_com=spa_com.replace(/\,/g, '');
+        console.log(spa_com);
+        spa_com=spa_com.replace(/\s+/g, '');
+        console.log(spa_com);
+    </script>
+</body>
+</html>
