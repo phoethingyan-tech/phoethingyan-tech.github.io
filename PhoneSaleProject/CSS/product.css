@@ -45,36 +45,6 @@ header {
     /* text-decoration: underline; */    
 }
 
-.hero-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;   
-    margin: 0 30px 0 30px;
-    column-gap: 50px;
-    /* width: 100%;
-    height: 500px;     */
-}
-
-.hero-info {     
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: start;
-    padding: 0 0 0 40px ;
-    margin: 50px;
-}
-
-.hero-info h2 {
-    font-size: 4em;  
-    color: white;  
-    padding-bottom: 20px;   
-}
-
-.hero-info p {
-    font-size: 30px;
-    color: white;
-    padding-bottom: 20px;   
-}
-
 .btn {
     display: inline-block;
     padding: 15px 30px;
@@ -89,12 +59,6 @@ header {
     color: rgb(153, 153, 153);
     background-color: #ac3202;
     
-}
-
-.welcome-img {
-    width: 100%;
-    height: auto;
-    padding: 10px;
 }
 
 /* <!-- This is Search Bar for Product --> */
@@ -294,79 +258,9 @@ header {
     margin: 50px 0 70px 0;
 }
 
-/* This is Contact Us */
-.contact {
-    margin-bottom: 40px;
-
-}
-.contact-us {
-    font-size: 3.5em;
-    margin: 100px 0 50px 0;
-    color: white;
-    text-align: center;
-}
-
-.map {
-    margin: 0 70px;
-    text-align: center;
-}
-
-.contact-mini {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin: 30px;
-    justify-content: center;
-    align-items: center;
-}
-
-.contact-info {
-    margin: 0 30px;
-    padding: 0 30px;    
-    /* background-color: rgba(248, 248, 248, 0.1) */   
-    padding-left: 70px;
-}
-
-.contact-info p {
-    font-size: 1.3em;
-    color: white;
-    padding: 10px;
-   
-}   
-
-.contact-info a {
-    text-decoration: none;
-    /* font-size: 1.3em; */
-    color: white;
-}
-
-.contact-form {
-    margin: 0 40px;
-    padding: 0 20px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label{
-   display: block;
-   font-weight: bold;
-   padding-bottom: 5px;
-   font-size: 1.3em;
-   color: white;
-}
-
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #161616;
-    color: white;
-    font-size: 1.2em;
-}
 
 /* This is Footer */
+
 .footer {    
     margin-top: 40px;
     background-color: #0f0f0f;
