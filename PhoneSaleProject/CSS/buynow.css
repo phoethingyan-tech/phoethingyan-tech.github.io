@@ -5,53 +5,58 @@
     /* background-color: white; */
 }
 
+@font-face {
+    font-family: "noto-normal";
+    src: url(../font/Pyidaungsu-2.5_Regular.ttf);
+}
+
 body {
-    color: #ff4800; 
-    background-color: darkgray;
+    color: white;
+    background-color:  rgba(22, 22, 22, .7);
+    /* font-family: "mm-font"; */
     padding: 0;
     margin: 0;
 }
 
+
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;    
     padding: 30px 20px;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
-    /* background-color: #424242; */
 }
 
 .brand {
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: center;
     font-weight: bold;
+    padding-left: 60px;
+
 }
 
 .nav-menu {
     padding-left: 30px;
-    display: grid;
-    grid-template-columns: repeat(6,auto);    
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-menu a {
-    font-size: 25px;
+    font-size: 27px;
     text-decoration: none;
     font-weight: bold;
-    color: #ff4800;
+    color: white;
+    padding-left: 30px;
 }
 
 .nav-menu a:hover {        
-    color: white;
+    color: rgba(185, 185, 185, 0.9);
+    font-size: 27.1px;
     /* text-decoration: underline; */    
 }
 
 /* This is Customer Order */
-/* 
-.customer-order-title {
-    font-size: 3em;
-    color: white;
-    text-align: center;
-} */
+
 .customer-order {
     display: grid;
     grid-template-columns: 1fr 1fr;

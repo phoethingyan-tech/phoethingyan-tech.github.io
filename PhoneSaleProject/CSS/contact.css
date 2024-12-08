@@ -7,7 +7,7 @@
 
 
 @font-face {
-    font-family: "noto-normal";
+    font-family: "pyidaungsu";
     src: url(../font/Pyidaungsu-2.5_Regular.ttf);
 }
 
@@ -19,12 +19,12 @@ body {
     margin: 0;
 }
 
-
 header {
     display: flex;    
-    padding: 30px 20px;
+    padding: 20px 20px;
     justify-content: space-between;
     align-items: center;
+    background-color:  rgba(22, 22, 22, .3);    
 }
 
 .brand {
@@ -56,7 +56,6 @@ header {
     /* text-decoration: underline; */    
 }
 
-
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;   
@@ -78,19 +77,41 @@ header {
 .hero-info h2 {
     font-size: 4em;  
     color: white;  
-    padding-bottom: 20px;   
+    padding-bottom: 20px; 
 }
 
 .hero-info p {
+    font-family: pyidaungsu;
     font-size: 35px;
     color: white;
-    padding-left: 70px;
+    padding-left: 150px;
     padding-bottom: 20px;   
+}
+
+.hero-info span {
+    font-family: pyidaungsu;
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+
+.hero-info ul li a {
+    font-family: pyidaungsu;
+    font-size: 1.3em;
+    padding-bottom: 20px;
+    margin-left: 5px;
+    color: white;
+    text-decoration: none
+}
+
+
+.hero-info ul li a:hover {
+    color:  #ff4800;
 }
 
 .hero-message {
     margin-bottom: 15px;
 }
+
 .hero-message li {
     font-size: 1.1em;
     margin-left: 20px;
@@ -120,134 +141,20 @@ header {
     padding: 10px;
 }
 
-/* <!-- This is Search Bar for Product --> */
-
-.search-box {
-    display: flex;   
-    justify-content: center;
-    align-items: center;
-    margin: 50px 0 20px 70px;
-    padding: 30px;     
-}
-
-.product-search {
-    width: 60%;
-    height: 30px;
-    margin: 0 20ps 20px 20px;
-    padding: 5px 10px;
-    font-size: 20px;
-    border-radius: 6px;
-    color: white;
-    background-color: #161616;
-}
-
-.search-box a {    
-    margin-left: 10px;
-    padding: 10px 20px;
-}
-
-/* This is Customer Detail */
-.vochor-data {
+.social-media-list {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgba(114, 114, 114, 0.05);
-    border-radius: 20px;
-}
-
-.customer-data {
-    padding: 10px;
-    margin: 0 30px;    
-}
-
-
-.customer-model {
-    margin-bottom: 20px;
-    
-}
-
-.customer-model label{
-   display: block;
-   font-weight: bold;
-   padding-bottom: 5px;
-   font-size: 1.3em;
-   color: white;
-}
-
-.customer-model input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #161616;
-    color: white;
-    font-size: 1.2em;
-}
-
-.data-check {
-    display: flex;
+    grid-template-columns: repeat(4,auto);
     justify-content: start;
-    align-items: left;
+    align-items: start;
+    margin: 0 20px 20px 10px;    
 }
 
-
-.customer-result {
-    margin: 0 30px;
-    padding: 30px 30px;
-    background-color: rgba(255, 72, 0, 0.03);
-    border-radius: 20px;
+.social-media-list a img {
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
 }
 
-/* This is Customer Result */
-.customer-result h2 {
-    font-size: 2.2em;
-    color: white;
-    text-align: center;
-    padding: 20px 0 10px 0; 
-    font-weight: bold;   
-}
-
-.customer-result-table {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    /* padding: 15px;     */
-}
-
-.customer-result-table tr {
-    margin: 20px;
-}
-.customer-result-table tr td{
-    color: #ebebeb;
-    padding: 15px 50px;   
-    font-size: 1.2em; 
-    margin: 10px;
-    border: 0;
-    /* border: .01px solid white; */
-}
-
-.td-color_1 {
-    background-color: rgba(0, 179, 250, 0.1);    
-}
-
-
-.td-color_2 {
-    background-color: rgba(138, 136, 136, 0.1);
-}
-
-.customer-result p {
-    color: white;
-    font-size: 1em;
-    text-indent: 30px;
-    padding: 7px 0;
-}
-
-
-.serviceadd {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-}
 
 /* This is Our Service Video */
 .service-video {
@@ -260,23 +167,28 @@ header {
 .service-video h2 {
     text-align: center;
     color: white;
-    font-size: 2.5em;
+    font-size: 3.5em;
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 .video-container {
     display: grid;
-    grid-template-columns: repeat(5,auto);
+    /* flex-direction: row; */
+    grid-template-columns: repeat(3,auto);
     justify-content: center;
     align-items: center;
-    column-gap: 20px;   
+    column-gap: 30px;  
+    /* margin-bottom: 30px;  */
+    /* background-color: red; */
 }
 
 
 .video-container iframe {
-    padding: 10px;
+    padding: 20px;
     width: 100%;
-    height: auto;
+    height: 200px;
+    border-radius: 30px;
 }
 
 .youtube-link  {
@@ -288,8 +200,8 @@ header {
 
 .btn-youtube {
     display: inline-block;
-    padding: 5px 20px;
-    font-size: 20px;
+    padding: 10px 20px;
+    font-size: 25px;
     text-decoration: none;
     color: white;
     background-color: #ff4800;
@@ -397,6 +309,93 @@ header {
     font-weight: bold;
 }
 
+.feedback {    
+    background-color: rgba(153, 153, 153, 0.05);
+    padding: 20px 20px 0 20px;
+    border-radius: 30px;
+    margin: 50px 0;
+}
+
+.feedback h2 {
+    font-weight: bold;
+    font-size: 2.6em;
+    padding-left: 100px;
+}
+
+.feedback-container {
+    /* background-color: rgba(214, 214, 214, 0.3); */
+    margin: 30px 25px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    /* align-items: start; */
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 10px;
+    justify-content: start;
+    align-items: center;
+}
+
+.item p, .item-textarea p{
+    font-size: 1.5em;  
+    padding: 0 0 10px 50px;  
+    text-align: start;
+    font-weight: bold;
+}
+
+.item select{
+    font-size: 1.3em;    
+    width: 50%;
+    height: 100%;
+    border: none;
+    border-radius: 7px;
+}
+
+.item input{
+    font-size: 1.3em;    
+    width: 50%;
+    height: 100%;
+    border: 0;
+    border-radius: 7px;
+}
+
+.item-textarea {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 10px;
+    justify-content: start;
+    align-items: start;
+}
+
+.item-textarea textarea{
+    font-size: 1.5em;    
+    width: 50%;
+    height: 100px;
+    border: 0;
+    border-radius: 7px;
+}
+
+.send-feedback {
+    width: 10%;
+    display: inline-block;
+    padding: 15px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    background-color: #ff4800;
+    border-radius: 7px; 
+    border: 0;
+    text-align: center;
+}
+
+.send-feedback:hover {    
+    color: rgb(153, 153, 153);
+    background-color: #ac3202;    
+}
 
 /* This is Footer */
 .footer {    
