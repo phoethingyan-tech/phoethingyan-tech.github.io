@@ -156,13 +156,13 @@ header {
 }
 
 .item-style {
-    background-color: #272727;
+    background-color: rgb(39, 39, 39, 0.3);
     width: 100%;
     height: auto;
     border-radius: 20px;
-    overflow: hidden;
-    
+    overflow: hidden;    
 }
+
 /* This is Item Image  */
 .item-img-x {
     width: 100%;

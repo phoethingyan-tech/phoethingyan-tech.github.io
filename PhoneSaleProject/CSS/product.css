@@ -90,9 +90,10 @@ header {
     margin: 0 20ps 20px 20px;
     padding: 5px 10px;
     font-size: 20px;
-    border-radius: 6px;
+    border: 0;
+    border-radius: 8px;
     color: white;
-    background-color: #161616;
+    background-color:  rgba(22, 22, 22, .7);
 }
 
 .search-box a {    
@@ -103,22 +104,25 @@ header {
 /* This is Product List*/
 
 .product-list {
-    margin-bottom: 50px;
+    background-color: rgba(39, 39, 39, 0.1);
+    margin: 20px 10px;
+    padding: 10px 0;
+    border-radius: 20px;
 }
 .items {
     display: grid;
     grid-template-columns: repeat(4,auto);
     margin: 30px;
-    column-gap: 25px;   
+    column-gap: 25px;  
 }
 
 .item-style {
-    background-color: #272727;
+    background-color: rgb(39, 39, 39, 0.3);
     width: 100%;
     height: auto;
-    border-radius: 8px;
-    overflow: hidden;
-    margin-bottom: 25px;    
+    border-radius: 20px;
+    overflow: hidden;   
+    margin-bottom: 20px;
 }
 
 /* This is Item Image  */
@@ -179,6 +183,72 @@ header {
     /* transform: scale(1.2); */
 }
 
+.item-img-12promax {
+    width: 100%;
+    height: auto;
+    transition: background-image 0.8s ease-in-out;
+}
+
+.item-img-12promax:hover {
+    content: url(../Images/12Series/12ProMax.jpg);
+    /* transform: scale(1.2); */
+}
+
+.item-img-13 {
+    width: 100%;
+    height: auto;
+    transition: background-image 0.8s ease-in-out;
+}
+
+.item-img-13:hover {
+    content: url(../Images/13Series/13.jpg);
+    /* transform: scale(1.2); */
+}
+
+.item-img-13promax {
+    width: 100%;
+    height: auto;
+    transition: background-image 0.8s ease-in-out;
+}
+
+.item-img-13promax:hover {
+    content: url(../Images/13Series/13ProMax.jpg);
+    /* transform: scale(1.2); */
+}
+
+.item-img-14 {
+    width: 100%;
+    height: auto;
+    transition: background-image 0.8s ease-in-out;
+}
+
+.item-img-14:hover {
+    content: url(../Images/14Series/14.jpg);
+    /* transform: scale(1.2); */
+}
+
+.item-img-14promax {
+    width: 100%;
+    height: auto;
+    transition: background-image 0.8s ease-in-out;
+}
+
+.item-img-14promax:hover {
+    content: url(../Images/14Series/14ProMax.jpg);
+    /* transform: scale(1.2); */
+}
+
+.item-img-15 {
+    width: 100%;
+    height: auto;
+    transition: background-image 0.8s ease-in-out;
+}
+
+.item-img-15:hover {
+    content: url(../Images/15Series/15.jpg);
+    /* transform: scale(1.2); */
+}
+
 .item-img-15promax {
     width: 100%;
     height: auto;
@@ -198,6 +268,17 @@ header {
 
 .item-img-16:hover {
     content: url(../Images/16Series/16.jpg);
+    /* transform: scale(1.2); */
+}
+
+.item-img-16promax {
+    width: 100%;
+    height: auto;
+    transition: background-image 0.8s ease-in-out;
+}
+
+.item-img-16promax:hover {
+    content: url(../Images/16Series/16ProMax.jpg);
     /* transform: scale(1.2); */
 }
 
@@ -257,11 +338,19 @@ header {
     background-color: #ac3202;
 }
 
-.bestseller-list h2 {
-    font-size: 3em;
+
+.bestseller-list {
+    background-color: rgba(39, 39, 39, 0.1);
+    margin: 20px 10px;
+    padding: 10px 0;
+    border-radius: 20px;
+}
+
+.bestseller-list h2 , .product-list h2 {
+    font-size: 3.3em;
     color: white;
-    margin: 100px 30px 30px 30px;
-    padding-bottom: 30px;
+    margin: 20px 30px 10px 30px;
+    padding-bottom: 20px;
     text-align: start;
 }
 
