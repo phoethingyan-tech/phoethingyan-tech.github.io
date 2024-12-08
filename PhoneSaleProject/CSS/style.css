@@ -5,12 +5,18 @@
     /* background-color: white; */
 }
 
+@font-face {
+    font-family: "noto-normal";
+    src: url(../font/Pyidaungsu-2.5_Regular.ttf);
+}
 body {
-    color: #ff4800; 
-    background-color: #161616;
+    color: #000000; 
+    background-color:  rgba(22, 22, 22, .7);
+    /* font-family: "mm-font"; */
     padding: 0;
     margin: 0;
 }
+
 
 header {
     display: grid;
@@ -70,9 +76,10 @@ header {
 }
 
 .hero-info p {
-    font-size: 30px;
+    font-size: 32px;
     color: white;
-    padding-bottom: 20px;   
+    padding-bottom: 20px;  
+    font-family: "mm-font"; 
 }
 
 .btn {

@@ -7,7 +7,7 @@
 
 body {
     color: #ff4800; 
-    background-color: #161616;
+    background-color:  rgba(22, 22, 22, .7);
     padding: 0;
     margin: 0;
 }
@@ -99,8 +99,7 @@ header {
 
 .btn:hover {    
     color: rgb(153, 153, 153);
-    background-color: #ac3202;
-    
+    background-color: #ac3202;    
 }
 
 .welcome-img {
@@ -139,6 +138,8 @@ header {
 .vochor-data {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    background-color: rgba(114, 114, 114, 0.05);
+    border-radius: 20px;
 }
 
 .customer-data {
@@ -179,9 +180,209 @@ header {
 
 .customer-result {
     margin: 0 30px;
-    padding: 0 30px;
-    background-color: #bebebe;
+    padding: 30px 30px;
+    background-color: rgba(255, 72, 0, 0.03);
+    border-radius: 20px;
+}
+
+/* This is Customer Result */
+.customer-result h2 {
+    font-size: 2.2em;
+    color: white;
+    text-align: center;
+    padding: 20px 0 10px 0; 
+    font-weight: bold;   
+}
+
+.customer-result-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* padding: 15px;     */
+}
+
+.customer-result-table tr {
+    margin: 20px;
+}
+.customer-result-table tr td{
+    color: #ebebeb;
+    padding: 15px 50px;   
+    font-size: 1.2em; 
+    margin: 10px;
+    border: 0;
+    /* border: .01px solid white; */
+}
+
+.td-color_1 {
+    background-color: rgba(0, 179, 250, 0.1);    
+}
+
+
+.td-color_2 {
+    background-color: rgba(138, 136, 136, 0.1);
+}
+
+.customer-result p {
+    color: white;
+    font-size: 1em;
+    text-indent: 30px;
+    padding: 7px 0;
+}
+
+
+.serviceadd {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+/* This is Our Service Video */
+.service-video {
+    margin: 50px 5px 20px 5px;
+    background-color: rgba(153, 153, 153, 0.05);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.service-video h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    padding: 20px;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;   
+}
+
+
+.video-container iframe {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.youtube-link  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-youtube {
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #ff4800;
+    border-radius: 7px; 
+    border: 0;   
+    margin-top: 8px;    
+}
+
+.btn-youtube:hover {    
+    color: rgb(153, 153, 153);
+    background-color: #ac3202;    
+}
+
+/* This is our services */
+.our-service-container {
+    margin: 50px 0 20px 0;
+    background-color: rgba(153, 153, 153, 0.05);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+
+.our-service-container h2{
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    padding: 20px;
+}
+
+.memory-img-group {
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    column-gap: 20px;
+    /* justify-content: center; */
+    text-align: center;
+    padding: 10px 0 20px 0; 
+    margin: 20px 0;
+}
+
+.memory-img {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 179, 250, 0.1);
     border-radius: 10px;
+    overflow: hidden;
+}
+
+.memory-img img {
+    width: 100%;
+    height: auto;
+}
+
+
+.memory-img p {
+    color: white;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+/* This is Customer feedback */
+
+.customer-feedback {
+    margin: 50px 0 20px 0;
+    background-color: rgba(153, 153, 153, 0.05);
+    padding: 20px 20px 0 20px;
+    border-radius: 30px;
+}
+.customer-feedback h2 {
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    padding: 10px;
+
+}
+.customer-feedback-group {
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    column-gap: 20px;
+    /* justify-content: center; */
+    text-align: center;
+    padding: 10px 0 0 0;
+    margin: 20px;
+}
+
+
+.feedback-img {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 179, 250, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.feedback-img img {
+    width: 100%;
+    height: auto;
+    /* margin-bottom: 20px; */
+}
+
+
+.feedback-img p {
+    color: white;
+    font-size: 1.4em;
+    padding: 10px;
+    font-weight: bold;
 }
 
 
