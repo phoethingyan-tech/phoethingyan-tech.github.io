@@ -7,7 +7,7 @@
 
 
 @font-face {
-    font-family: "noto-normal";
+    font-family: "pyidaungsu";
     src: url(../font/Pyidaungsu-2.5_Regular.ttf);
 }
 
@@ -58,10 +58,12 @@ header {
     /* text-decoration: underline; */    
 }
 
+/* This is welcome box */
+
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;   
-    margin: 0 30px 0 30px;
+    margin: 20px 30px 0 30px;
     column-gap: 50px;
     /* width: 100%;
     height: 500px;     */
@@ -77,7 +79,7 @@ header {
 }
 
 .hero-info h2 {
-    font-size: 4em;  
+    font-size: 4.3em;  
     color: white;  
     padding-bottom: 20px;   
 }
@@ -85,18 +87,21 @@ header {
 .hero-info p {
     font-size: 35px;
     color: white;
-    padding-left: 70px;
-    padding-bottom: 20px;   
+    padding-left: 100px;
+    padding-bottom: 20px;  
+    font-family: 'pyidaungsu'; 
 }
 
 .hero-message {
     margin-bottom: 15px;
 }
+
 .hero-message li {
-    font-size: 1.1em;
+    font-size: 1.2em;
     margin-left: 20px;
     padding: 8px;
     color: aliceblue;
+    font-family: 'pyidaungsu'; 
 }
 
 .btn {
@@ -118,9 +123,18 @@ header {
 .welcome-img {
     width: 100%;
     height: auto;
-    padding: 10px;
+    padding: 10px 50px 10px 10px;
+    border: 0;
+    border-radius: 100px;
+    opacity: 70%;
 }
 
+/* This is customer check */
+.customer-check {
+    background-color: rgba(39, 39, 39, 0.1);
+    margin: 20px 0;
+    border-radius: 20px;
+}
 /* <!-- This is Search Bar for Product --> */
 
 .search-box {
@@ -137,9 +151,10 @@ header {
     margin: 0 20ps 20px 20px;
     padding: 5px 10px;
     font-size: 20px;
-    border-radius: 6px;
+    border: 0;
+    border-radius: 8px;
     color: white;
-    background-color: #161616;
+    background-color:  rgba(22, 22, 22, .7);
 }
 
 .search-box a {    
@@ -168,7 +183,7 @@ header {
 
 .customer-model label{
    display: block;
-   font-weight: bold;
+   font-weight: 450;
    padding-bottom: 5px;
    font-size: 1.3em;
    color: white;
@@ -177,9 +192,9 @@ header {
 .customer-model input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #161616;
+    border: 0;
+    border-radius: 8px;
+    background-color:  rgba(22, 22, 22, .7);
     color: white;
     font-size: 1.2em;
 }
@@ -194,8 +209,8 @@ header {
 .customer-result {
     margin: 0 30px;
     padding: 30px 30px;
-    background-color: rgba(255, 72, 0, 0.03);
-    border-radius: 20px;
+    background-color:  rgba(110, 110, 110, 0.3);
+    border-radius: 30px;
 }
 
 /* This is Customer Result */
@@ -209,9 +224,10 @@ header {
 
 .customer-result-table {
     display: flex;
+    border-collapse: collapse;    
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 20px;   
     /* padding: 15px;     */
 }
 
@@ -219,9 +235,9 @@ header {
     margin: 20px;
 }
 .customer-result-table tr td{
-    color: #ebebeb;
+    color: white;
     padding: 15px 50px;   
-    font-size: 1.2em; 
+    font-size: 1.23em; 
     margin: 10px;
     border: 0;
     /* border: .01px solid white; */
@@ -238,9 +254,10 @@ header {
 
 .customer-result p {
     color: white;
-    font-size: 1em;
+    font-size: 1.2em;
     text-indent: 30px;
     padding: 7px 0;
+    font-family: 'pyidaungsu';
 }
 
 
@@ -249,6 +266,7 @@ header {
     justify-content: center;
     padding-top: 10px;
 }
+
 
 /* This is Our Service Video */
 .service-video {
@@ -261,23 +279,28 @@ header {
 .service-video h2 {
     text-align: center;
     color: white;
-    font-size: 2.5em;
+    font-size: 3.5em;
     padding: 20px;
+    margin-bottom: 30px;
 }
 
 .video-container {
     display: grid;
-    grid-template-columns: repeat(5,auto);
+    /* flex-direction: row; */
+    grid-template-columns: repeat(3,auto);
     justify-content: center;
     align-items: center;
-    column-gap: 20px;   
+    column-gap: 30px;  
+    /* margin-bottom: 30px;  */
+    /* background-color: red; */
 }
 
 
 .video-container iframe {
-    padding: 10px;
+    padding: 20px;
     width: 100%;
-    height: auto;
+    height: 200px;
+    border-radius: 30px;
 }
 
 .youtube-link  {
@@ -289,8 +312,8 @@ header {
 
 .btn-youtube {
     display: inline-block;
-    padding: 5px 20px;
-    font-size: 20px;
+    padding: 10px 20px;
+    font-size: 25px;
     text-decoration: none;
     color: white;
     background-color: #ff4800;
@@ -303,7 +326,6 @@ header {
     color: rgb(153, 153, 153);
     background-color: #ac3202;    
 }
-
 /* This is our services */
 .our-service-container {
     margin: 50px 0 20px 0;
@@ -328,6 +350,7 @@ header {
     text-align: center;
     padding: 10px 0 20px 0; 
     margin: 20px 0;
+    border-radius: 30px;
 }
 
 .memory-img {
@@ -402,7 +425,7 @@ header {
 /* This is Footer */
 .footer {    
     margin-top: 40px;
-    background-color: #0f0f0f;
+    background-color: rgba(15, 15, 15, 0.3);
     padding: 30px 0;
     text-align: center;
     

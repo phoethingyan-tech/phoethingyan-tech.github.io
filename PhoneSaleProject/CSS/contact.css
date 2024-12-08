@@ -104,9 +104,8 @@ header {
     text-decoration: none
 }
 
-
 .hero-info ul li a:hover {
-    color:  #ff4800;
+    color:  #181818;
 }
 
 .hero-message {
@@ -118,6 +117,25 @@ header {
     margin-left: 20px;
     padding: 8px;
     color: aliceblue;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    margin: 0 30px 20px 0;
+}
+
+.social-link a {
+    color:white;
+    font-size: 2em;    
+    padding-right: 30px;
+}
+
+.social-link a:hover {
+    font-weight: bold;
+    color: rgb(12, 12, 12);
 }
 
 .btn {
@@ -139,7 +157,6 @@ header {
 .welcome-img {
     width: 100%;
     height: auto;
-    padding: 10px;
 }
 
 .social-media-list {
@@ -401,7 +418,7 @@ header {
 /* This is Footer */
 .footer {    
     margin-top: 40px;
-    background-color: #0f0f0f;
+    background-color: rgba(15, 15, 15, 0.3);
     padding: 30px 0;
     text-align: center;
     

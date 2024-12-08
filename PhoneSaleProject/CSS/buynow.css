@@ -6,7 +6,7 @@
 }
 
 @font-face {
-    font-family: "noto-normal";
+    font-family: "pyidaungsu";
     src: url(../font/Pyidaungsu-2.5_Regular.ttf);
 }
 
@@ -75,8 +75,8 @@ header {
     margin: 20px;
     padding: 10px 50px;
     /* background-color: aqua; */
-    border: .3px solid white;
-    border-radius: 8px;
+    background-color:  rgba(22, 22, 22, .1);
+    border-radius: 20px;
 }
 
 .customer-information h2{
@@ -103,31 +103,31 @@ header {
 
 .information-item  label{
     color: white;
-    font-size: 1.3em;
+    font-size: 1.4em;
     padding-bottom: 5px;
 }
 
 .information-item  input{
-    color: black;
+    color: white;
     font-size: 1.3em;
     padding: 5px;
     border: 0;
     border-radius: 5px;
     width: 500px;
     height: auto;
+    background-color:  rgba(22, 22, 22, .5);
     /* background-color: none; */
 }
 
 .information-item textarea{
-    color: black;
+    color: white;
     font-size: 1.3em;
     padding: 5px;
     border: 0;
     border-radius: 5px;
     width: 500px;
     height: 170px;
-    
-    /* background-color: none; */
+    background-color:  rgba(22, 22, 22, .5);
 }
 
 /* This is Right detail */
@@ -142,22 +142,23 @@ header {
 .your-order {
     /* background-color: rgb(22, 22, 22); */
     padding: 10px 30px;
-    border: .1px solid white;
-    border-radius: 10px;
+    border: 0;
+    background-color:  rgba(22, 22, 22, .1);
+    border-radius: 20px;
 }
 
 .your-order h2 {
     font-size: 2.3em;
     color: white;
     text-align: center;
-    padding-bottom: 20px;    
+    padding-bottom: 10px;    
 }
 
 .your-product {
     font-size: 1.3em;
     color: white;
     text-align: start;
-    padding-bottom: 20px;
+    padding: 20px 0 20px 0;
     font-weight: bold;    
 }
 
@@ -201,7 +202,7 @@ header {
 .your-cashback {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: white;
     font-size: 1.3em;
 }
@@ -213,7 +214,7 @@ header {
 .your-total {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 30px;
+    margin: 20px 0;
     font-weight: bold;
     color: white;
     font-size: 1.3em;
@@ -263,15 +264,17 @@ header {
 }
 
 .payment-note span {
-    font-size: 1em;
+    font-size: 1.17em;
     color: white;
-    text-indent: 10px;
+    text-indent: 20px;
     text-align: justify;
+    font-family: 'pyidaungsu';
+    padding-bottom: 10px;
 }
 
 .accept-condition {
     display: flex;
-    padding: 10px 0 0 0;
+    padding: 12px 0 0 0;
     justify-content: start;
     align-items: start;
 }
@@ -284,8 +287,9 @@ header {
 }
 
 .accept-condition span{
-    font-size: 1.2em;
+    font-size: 1.23em;
     color: white;
+    padding-bottom: 10px;
     /* text-indent: 30px; */
 }
 
@@ -306,7 +310,7 @@ header {
 /* This is Footer */
 .footer {    
     margin-top: 40px;
-    background-color: #0f0f0f;
+    background-color: rgba(15, 15, 15, 0.3);
     padding: 30px 0;
     text-align: center;
     
