@@ -243,6 +243,10 @@ header {
     /* border: .01px solid white; */
 }
 
+.item-bold{
+    font-weight: 500;
+}
+
 .td-color_1 {
     background-color: rgba(0, 179, 250, 0.1);    
 }

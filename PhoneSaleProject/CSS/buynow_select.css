@@ -94,9 +94,9 @@ header {
 
 .item-img {
     margin: 50px 20px;
-    padding: 50px 20px;
-    /* background-color: rgba(231, 231, 231,0.2); */
-    border-radius: 10px;
+    padding: 20px 20px;
+    background-color: rgba(231, 231, 231,0.1);
+    border-radius: 30px;
 }
 
 .item-img img{
@@ -306,7 +306,7 @@ header {
 .specification-info {
     border-collapse: collapse;
     margin: 10px 0;
-    font-size: 1.4em;
+    font-size: 1.2em;
     min-width: 400px;
     border-radius: 20px;
     overflow: hidden;
@@ -324,14 +324,16 @@ header {
 
 
 .item-name {   
-    font-weight: 300; 
+    font-weight: 200; 
     color: white;
+    font-size: 1.2em;
     /* margin-right: 30px; */
     /* padding: 0 30px 10px 30px; */
 }
 
 .item-data {    
     color: white;
+    font-size: 1.2em;
 }
 
 
