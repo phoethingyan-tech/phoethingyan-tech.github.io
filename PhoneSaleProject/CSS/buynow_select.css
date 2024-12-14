@@ -266,7 +266,6 @@ header {
 .relative-photo-container {
     display: grid;
     grid-template-columns: repeat(6,auto);  
-
 }
 
 .img-spacing {
@@ -280,10 +279,10 @@ header {
     text-align: center;
     border-radius: 15px;
 }
-/* 
-.relative-photo-container img:hover {
-    width: 120%;
-    height: auto;
+
+/* .relative-photo-container img:hover {
+    width: 150%;
+    background-position: center;
 } */
 
 .item_specification {

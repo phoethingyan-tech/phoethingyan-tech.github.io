@@ -279,143 +279,164 @@ header {
     padding: 10px;
 }
 
-/* This is Customer feedback */
 
-.customer-feedback {
-    margin: 50px 0 20px 0;
-    background-color: rgba(153, 153, 153, 0.05);
-    padding: 20px 20px 0 20px;
-    border-radius: 30px;
-}
-.customer-feedback h2 {
-    text-align: center;
-    color: white;
-    font-size: 2.5em;
-    padding: 10px 0 20px;
-
-}
-.customer-feedback-group {
-    display: grid;
-    grid-template-columns: repeat(3,auto);
-    column-gap: 20px;
-    /* justify-content: center; */
-    text-align: center;
-    padding: 10px 0 0 0;
-    margin: 20px;
-}
-
-
-.feedback-img {
+/* This is Contact Us */
+.contact {
+    background-color: rgba(39, 39, 39, 0.1);
+    margin: 20px 10px;
+    padding: 10px 0;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(0, 179, 250, 0.1);
-    border-radius: 10px;
-    overflow: hidden;
+    justify-content: center;
+    text-align: center;
+
 }
-
-.feedback-img img {
-    width: 100%;
-    height: auto;
-    /* margin-bottom: 20px; */
-}
-
-
-.feedback-img p {
+.contact h2 {
+    font-size: 3.3em;
+    margin: 20px 0 70px 0;
     color: white;
-    font-size: 1.4em;
-    padding: 10px;
-    font-weight: bold;
+    text-align: center;
 }
 
-.feedback {    
-    background-color: rgba(153, 153, 153, 0.05);
-    padding: 20px 20px 0 20px;
+.contact iframe {
+    /* margin: 0 70px; */    
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* This is customer feedback memory */
+.feedback {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(39, 39, 39, 0.1);
     border-radius: 30px;
-    margin: 50px 0;
 }
-
 .feedback h2 {
-    font-weight: bold;
-    font-size: 2.6em;
-    margin: 30px 0;
-    padding-bottom: 30px;
-    /* padding-left: 100px; */
+    font-size: 3.2em;
+    margin: 20px 0 70px 0;
+    color: white;
     text-align: center;
 }
 
 .feedback-container {
-    /* background-color: rgba(214, 214, 214, 0.3); */
-    margin: 30px 25px;
-    padding: 0 20px;
     display: flex;
-    flex-direction: column;
-    /* justify-content: start; */
-    /* align-items: start; */
+    /* flex-direction: column; */
+    column-gap: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
-.item {
+.feedback-item {
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    border: .3px solid white;
+    border-radius: 20px;
+}
+
+.feedback-item img {
+    width: 20px;
+    height: 20px;
+}
+
+/* This is Customer Feedback report */
+.contact-mini {
     display: grid;
-    grid-template-columns: 1fr 5fr;
-    padding: 10px;
-    justify-content: start;
+    grid-template-columns: 1fr 1fr;
+    margin: 30px;
+    justify-content: center;
     align-items: center;
 }
 
-.item p, .item-textarea p{
-    font-size: 1.5em;  
-    padding: 0 0 10px 50px;  
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: start;
-    font-weight: bold;
+    margin: 0 30px;
+    padding: 0 30px;    
+    /* background-color: rgba(248, 248, 248, 0.1) */   
+    padding-left: 70px;
 }
 
-.item select{
-    font-size: 1.3em;    
-    width: 50%;
-    height: 100%;
-    border: none;
-    border-radius: 7px;
-}
-
-.item input{
-    font-size: 1.3em;    
-    width: 50%;
-    height: 100%;
-    border: 0;
-    border-radius: 7px;
-}
-
-.item-textarea {
-    display: grid;
-    grid-template-columns: 1fr 5fr;
+.contact-info p {
+    font-size: 1.5em;
+    color: white;
     padding: 10px;
+   
+}   
+
+.contact-info a {
+    text-decoration: none;
+    /* font-size: 1.3em; */
+    color: white;
+}
+
+.icon-detail, .social-link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 20px;
+    padding: 4px 0;
+}
+
+.icon-detail i{
+    font-size: 1.3em;
+    margin-right: 10px;
+}
+
+
+.social-link {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 20px;
+    padding: 4px 0;
+}
+
+.social-link a {
+    font-size: 2em;
+    margin: 10px 30px 0 0;
+}
+
+.social-link a:hover {
+    font-weight: bold;
+    color: rgb(12, 12, 12);
+}
+
+/* This is Contact form mini */
+.contact-form {   
+    margin: 0 40px;
+    padding: 0 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
     justify-content: start;
     align-items: start;
 }
 
-.item-textarea textarea{
-    font-size: 1.5em;    
-    width: 50%;
-    height: 100px;
-    border: 0;
-    border-radius: 7px;
+.form-group label{
+   display: block;
+   font-weight: bold;
+   padding-bottom: 5px;
+   font-size: 1.3em;
+   color: white;
+   align-items: start;
+   justify-content: start;
 }
 
-.send-feedback {
-    width: 10%;
-    display: inline-block;
-    padding: 15px 20px;
-    font-size: 18px;
-    text-decoration: none;
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+    background-color: rgba(12, 12, 12, 0.3);
     color: white;
-    background-color: #ff4800;
-    border-radius: 7px; 
-    border: 0;
-    text-align: center;
-}
-
-.send-feedback:hover {    
-    color: rgb(153, 153, 153);
-    background-color: #ac3202;    
+    font-size: 1.2em;
 }
 
 /* This is Footer */
