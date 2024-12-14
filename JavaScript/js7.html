@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Array
+
+        // [] or Array ()
+        let arr = [1,2,3,'a','b','c'];
+        console.log(arr);
+        console.log(arr[4]);
+
+        let arr1=Array('aa', 'bb', 'cc', 11, 22, 33);
+        console.log(arr1);
+        console.log(arr1[2]);
+
+        let arr2=['Mg Mg', 'Mandalay', 32, 43, ['Yangon', 'Monya', 'Tauungyi']];
+        console.log(arr2);
+        console.log(arr2[4][1]);
+
+        let fruits =[];
+        fruits [0] = 'apple';
+        fruits [1] = 'orange';
+        fruits [2] = 'banana';
+        console.log(fruits);
+
+        fruits.push('Mango');  // Aray ထဲကို  နောက်ကနေထပ် ထည့်
+        console.log(fruits);
+
+        fruits.unshift('Cherryy');
+        console.log(fruits);   // Array ထဲကို  ရှေ့ကနေ ထပ်ထည့် Index 0 နေရာဖြစ်သွားမယ်။
+
+        fruits.pop();    // Array ထဲက နောက်ဆုံးခန်းကို ဖျက်မယ်
+        console.log(fruits);
+
+        fruits.shift();  // Array ထဲက ရှေ့ဆုံးခန်းကို ဖျက်မယ်
+        console.log(fruits);
+
+        console.log(fruits.sort());  // A-Z
+        console.log(fruits.reverse()); //Z-A
+
+        let fruits_str=fruits.toString();
+        console.log(fruits_str);
+        console.log(typeof(fruits_str));
+
+        fruits=fruits_str.split(',');  // , ကို သုံးပြီး Array ခန်းဖွဲ့မယ်
+        console.log(fruits);
+        let str="Mg Mg";
+        arr3= str.split(' ');  // space သုံးပြီး Array ခန်းဖွဲ့မယ်
+        console.log(arr3);
+    </script>
+</body>
+</html>
