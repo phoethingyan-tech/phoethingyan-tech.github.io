@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .storage-design {
+            display: flex;
+            /* flex-direction: column; */
+        }
+
+        .storage-container {
+            display: grid;
+            /* flex-direction: row; */
+            grid-template-columns: 1fr 2fr;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid red;
+            border-radius: 30px;
+            margin-right: 30px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .storage-container input {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+
+        .storage-container label {
+            font-size: 1.4em;
+            cursor: pointer;            
+        }
+
+        /* Hide the default radio button */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* Create a custom radio button */
+    .radio-label {
+      display: inline-block;
+      position: relative;
+      padding-left: 30px;
+      margin: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      user-select: none;
+    }
+
+    /* The custom circle */
+    .radio-label::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+      background-color: white;
+      transition: border-color 0.3s, background-color 0.3s;
+    }
+
+    /* The inner circle when selected */
+    .radio-label::after {
+      content: '';
+      position: absolute;
+      left: 6px;
+      top: 50%;
+      transform: translateY(-50%) scale(0);
+      width: 10px;
+      height: 10px;
+      background-color: #007bff; /* Custom color */
+      border-radius: 50%;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Checked state */
+    input[type="radio"]:checked + .radio-label::before {
+      border-color: #007bff;
+    }
+
+    input[type="radio"]:checked + .radio-label::after {
+      transform: translateY(-50%) scale(1);
+    }
+
+
+    </style>
+</head>
+<body>
+    
+
+    <form>
+    <label>
+      <input type="radio" name="color" value="red">
+      <span class="radio-label">Red</span>
+    </label>
+
+    <label>
+      <input type="radio" name="color" value="green">
+      <span class="radio-label">Green</span>
+    </label>
+
+    <label>
+      <input type="radio" name="color" value="blue">
+      <span class="radio-label">Blue</span>
+    </label>
+  </form>
+    
+</body>
+</html>
