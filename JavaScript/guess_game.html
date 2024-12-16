@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let secret_no = 5;
+        let guess=prompt(`Guess a Number between 1 to 10`);
+            console.log(guess);
+            while(secret_no != guess) {
+                if(guess > secret_no) {
+                    alert(`Higher, Try Again!`);
+                }
+                else if(guess < secret_no) {
+                    alert(`Lower, Try Again!`);
+                }
+                guess=prompt(`Guess a Number between 1 to 10`);
+            }
+            alert(`Correct`);
+        
+    </script>
+</body>
+</html>

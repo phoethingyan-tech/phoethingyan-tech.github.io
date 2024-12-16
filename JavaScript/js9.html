@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Function
+        function funName() {
+            document.write(`<h3>Hello Function</h3>`);
+        }
+        funName();
+
+        function add(num1, num2) {
+            let result = num1 + num2;
+            document.write(`<h3>Add is  ${result}</h3>`);
+        }
+        add(30,20);
+
+        function Sub(num1 = 15, num2 = 10) {
+            let result = num1 - num2;
+            document.write(`<h3>Sub ${result}</h3>`);
+        }
+        Sub();
+        Sub(50,10);
+
+        function getSize(length, width, height) {
+            let area = length * width;
+            let volume = length * width * height;
+            let sizes = [area, volume];
+            return sizes;
+        }
+
+        // let length= Number(prompt(`Enter a number for length`));
+        // let width= Number(prompt(`Enter a number for width`));
+        // let height= Number(prompt(`Enter a number for height`));
+        
+        // let area = getSize(length, width, 0)[0];
+        // document.write(`<h3>The area is ${area}</h3>`);
+        // console.log(area);
+        // let volume = getSize(length, width, height)[1];
+        // document.write(`<h3>The Volume is ${volume}</h3>`);
+
+        //Object
+        let hotel = {
+            name: 'XYZ Hotel',
+            rooms: 40,
+            booked: 25,
+            gym: true,
+            roomTypes:['twin','double','suite'],
+            checkAvailability: function() {
+                return this.rooms - this.booked;
+            }
+        };
+        console.log(hotel);
+
+        let hotelName= hotel.name;
+        document.write(`<h3>Hotel name is ${hotelName}</h3>`);
+        
+        let hotelRoom=hotel.rooms;
+        document.write(`<h3>Hotel total rooms is ${hotelRoom}</h3>`);
+
+        let roomtypes=hotel.roomTypes;
+        document.write(`<h3>Hotel room types is ${roomtypes}</h3>`);
+
+        let roomFree = hotel.checkAvailability();
+        document.write(`<h3>Room Availability: ${roomFree}</h3>`);
+
+        hotel.pool = false;    // add object
+        console.log(hotel);
+
+        delete hotel.gym;       // delete object
+        console.log(hotel);
+    </script>
+</body>
+</html>
