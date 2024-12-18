@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="ul">
+        <li id="one">Hello</li>
+        <li id="two">Hi</li>
+        <li id="three">Welcome</li>
+    </ul>
+
+    <script>
+
+        let startTag = document.querySelector("#ul");
+        console.log(startTag);
+        //return text nodes
+        let first_child = startTag.firstChild;
+        console.log(first_child);
+
+        let first_child_element = startTag.firstElementChild;
+        console.log(first_child_element);
+
+        let last_child = startTag.lastElementChild;
+        console.log(last_child);
+
+        let previous_element_sibling =  last_child.previousElementSibling;
+        console.log(previous_element_sibling);
+        
+        let next_element_sibling = first_child_element.nextElementSibling;
+        console.log(next_element_sibling);
+    </script>
+    
+</body>
+</html>
