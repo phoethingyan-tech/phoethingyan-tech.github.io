@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">CSS Manipulation with DOM</h1>
+    <button onclick="action()">Action</button>
+    <br><br>
+
+    <img src="dom-1.png" alt="" width="200" height="100" id="img">
+    <br><br>
+
+    <img src="dom-2.png" alt="" width="200" height="100" onmouseover="big()" onmouseout="normal()" id="image">
+
+    <script>
+        function action() {
+            let heading = document.querySelector('#heading');
+            heading.style.color = 'red';
+            heading.style.backgroundColor = 'black';
+
+            let image = document.querySelector('img');
+            image.style.width = '300px';
+            image.style.height = '150px';
+        }
+
+        let img = document.querySelector('#image');
+        function big(){
+            img.style.width = '500px';
+            img.style.height = '250px';
+        }
+
+        function normal() {
+            img.style.width = '200px';
+            img.style.height = '100px';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading" onclick="changeColor()">Create textNode Elements and Attribute node</h1>
+    <p id="text_node"></p>
+    <button onclick="create_textNode()">Create Text Node</button>
+    <br><br>
+    <div id="div1">
+
+    </div>
+    <button onclick="create_element()">Create Element</button>
+    <br><br>
+
+    <input type="text" name="" id="name">
+    <button onclick="adding()">Add</button>
+    <ul id="ulist">
+        <li>Ko Bo Bo Aung</li>
+    </ul>
+
+
+    <script>
+        function create_textNode(){
+            let text_node = document.querySelector("#text_node");
+            let hi = document.createTextNode('Hello Jsvascript');
+            text_node.appendChild(hi);
+            
+        }
+
+        function create_element() {
+            let h3 = document.createElement('h3');
+            console.log(h3);
+            h3.innerText = 'Create h3 element';
+            document.body.appendChild(h3);
+            // let aa = document.querySelector("#div1");
+            // aa.appendChild(h3);
+        }
+
+        function adding() {
+            let name = document.querySelector('#name').value;
+            console.log(name);
+            let ulist= document.querySelector('#ulist');
+            let li = document.createElement('li');
+            li.innerText = name;
+            console.log(li);
+            ulist.appendChild(li);
+        }
+
+        function changeColor() {
+            // alert('Hello Js');
+            let heading = document.querySelector('#heading');
+            let attr = heading.getAttribute('style');
+            console.log(attr);
+
+            if(attr) {
+                console.log(attr);
+                heading.removeAttribute('style');
+            }
+            else {
+                heading.setAttribute('style', 'color:red');
+            }
+        }
+    </script>
+</body>
+</html>
