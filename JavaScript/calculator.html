@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+            border-color: red;
+        }
+
+        small {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <form action="">
+        <label for="num1">Number One</label>
+        <input type="number" name="num1" id="num1">
+        <small id="num1_error"></small>
+        <br><br>
+
+        <label for="num2">Number Two</label>
+        <input type="number" name="num2" id="num2">
+        <small id="num2_error"></small>
+        <br><br>        
+
+        <label for="result">Result</label>
+        <input type="number" name="result" id="result" readonly>
+        <br><br>
+        <button type="button" onclick="add()">Add</button>
+        <button type="button" onclick="sub()">Sub</button>
+    </form>
+
+    <script>
+        // function add() {
+        //     let number1 = document.querySelector('#num1').value;
+        //     let number2 = document.querySelector('#num2').value;
+        //     let result = Number(number1) + Number(number2);
+        //     document.querySelector('#result').value = result;
+        // }
+
+        // function sub() {
+        //     let number1 = document.querySelector('#num1').value;
+        //     let number2 = document.querySelector('#num2').value;
+        //     let result = Number(number1) + Number(number2);
+        //     document.querySelector('#result').value = result;
+        // }
+
+        function formValidation() {
+            let num1 = document.querySelector('#num1');
+            let num2 = document.querySelector('#num2');
+
+            let num1_error = document.querySelector('#num1_error');
+            let num2_error = document.querySelector('#num2_error');
+
+            let number1 = num1.value;
+            let number2 = num2.value;
+
+            function removeError(){
+                num1.removeAttribute('class','error');
+                num2.removeAttribute('class', 'error');
+                num1_error.innerText = '';
+                num2_error.innerText = '';               
+            }
+
+            if(number1 == '' || number2 =='') {
+                removeError();
+
+                if(number1 == '') {
+                    showError(num1_error,num1,'Number one is require!');
+                }
+
+                if(number2 == '') {
+                    showError(num2_error,num2,'Number two is require!');
+                }
+
+                function showError(num_error, num_input, message) {
+                    num_error.innerHTML = message;
+                    num_input.setAttribute('class','error');
+                }
+            }
+
+            else {
+                removeError();
+                return {
+                    num1:number1,
+                    num2:number2
+                }
+            }
+        }
+
+        // function add() {
+        //         let numbers = formValidation();
+        //         console.log(numbers);
+        //         let result = Number(numbers.num1) + Number(numbers.num2);
+        //         document.querySelector('#result').value = result;              
+                
+        // }
+
+        // function sub() {
+        //         let numbers = formValidation();
+        //         console.log(numbers);
+        //         let result = Number(numbers.num1) - Number(numbers.num2);
+        //         document.querySelector('#result').value = result;           
+        // }
+
+        function add() {
+            let numbers = formValidation();
+            if (numbers) {
+                let result = Number(numbers.num1) + Number(numbers.num2);
+                document.querySelector('#result').value = result;
+            }
+        }
+
+        function sub() {
+            let numbers = formValidation();
+            if (numbers) {
+                let result = Number(numbers.num1) - Number(numbers.num2);
+                document.querySelector('#result').value = result;
+            }
+        }
+    </script>
+</body>
+</html>
