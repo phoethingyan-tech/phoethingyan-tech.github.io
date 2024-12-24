@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Hello this is jQuery effect lesson. You can learn show, hide and toggle effect.
+    </p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toggle</button>
+    <br><br>
+    <button id="fade-out">FadeOut</button>
+    <button id="fade-in">FadeIn</button>
+    <button id="fade-toggle">FadeToggle</button>
+    <button id="fade-to">FadeTo</button>
+    <button id="show-normal">Show Normal</button>
+    <h3 style="background-color: red;padding: 100px; color:white;">This is fade effect</h3>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#hide').click(function() {
+                $('p').hide(2000);   //hide(speed), speed -> fast, slow, millisecond
+            });
+
+            $('#show').click(function() {
+                $('p').show(2000);
+            });
+
+            $('#toggle').click(function() {
+                $('p').toggle('slow');
+            });
+
+            $('#fade-out').click(function(){
+                $('h3').fadeOut(1000);
+            });
+
+            $('#fade-in').click(function(){
+                $('h3').fadeIn(1000);
+            });
+
+            $('#fade-toggle').click(function(){
+                $('h3').fadeToggle(3000);
+            });
+
+            $('#fade-to').click(function(){
+                $('h3').fadeTo(2000, 0.3);    // speed time and opticity
+            });
+
+            $('#show-normal').click(function(){
+                $('h3').fadeTo(2000, 1);
+            });
+        });
+    </script>
+</body>
+</html>
