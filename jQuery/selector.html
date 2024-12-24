@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>jQuery is Funny!</h1>
+    <button id="click">Click</button>
+
+    <p id="p-click">This is p tag 1.</p>
+    <p id="p-select">This is p tag 2.</p>
+    <p class="tag">This is p tag 3.</p>
+    <h2 class="tag">This is h2 tag!</h2>
+    <h3 class="tag">This is h3 tag!</h3>
+
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+
+            $('#click').click(function() {
+                $('p').hide(function() {
+                    alert('all p element hide');
+                });
+                
+            });
+
+            $('#p-click').click(function() {
+                $('.tag').hide();
+            });
+
+            $('#p-select').click(function() {
+                $(this).hide();
+            });
+        });
+    </script>
+</body>
+</html>

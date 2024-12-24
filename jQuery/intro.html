@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- google cdn link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        //jQuery(selector).action();
+        //$(selector).action();
+        let heading = $('#heading').html();
+        console.log(heading);
+
+        // document ready သည် Document တစ်ခုလုံးအလုပ်လုပ်ပြီးပြီဆိုမှ ဒီ Code ကို Run မယ်
+        $(document).ready(function() {
+            let heading = $('#heading').html();
+            console.log(heading);
+        })
+    </script>
+</head>
+<body>
+    <h1 id="heading">jQuery</h1>
+    
+</body>
+</html>
