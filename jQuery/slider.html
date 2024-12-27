@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #click-me {
+        max-width: 250px;
+        background-color: black;
+        padding: 15px 0;
+        color: white;
+        text-align: center;
+        margin-bottom: 0;
+        cursor: pointer;
+    }
+
+    #panel {
+        max-width: 250px;
+        background-color: rgb(54, 54, 54);
+        padding: 50px 0;
+        color: white;
+        text-align: center;
+        margin-top: 0;
+        /* display: none; */
+    }
+
+</style>
+<body>
+    <p id="click-me">Click Me</p>
+    <p id="panel">Hello Slider</p>    
+</body>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#click-me').click(function() {
+                // $('#panel').slideDown();
+                // $('#panel').slideUp();
+                $('#panel').slideToggle();
+            });
+        });
+    </script>
+</html>
