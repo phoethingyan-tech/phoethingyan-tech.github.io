@@ -6,6 +6,7 @@
     <title>PRO Mobile</title>
     <link rel="stylesheet" href="../CSS/buynow_select.css">
     <link rel="stylesheet" href="../CSS/product.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -35,22 +36,29 @@
                 <div class="storage">
                     <span class="storage-title">Storage</span> 
                     <div class="storage-container">
-                        <input type="radio" name="storage" id="128gb" value="128">
-                        <span for="128gb"></label>128 GB</span>
+                        <input type="radio" id="128gb"  name="radio">
+                        <label for="128gb">128GB</label>
                     </div>
 
-                    <input type="radio" name="storage" id="256gb" value="256"> 
-                    <label for="256gb"></label>256 GB</label>
+                    <div class="storage-container">
+                        <input type="radio" id="256gb" name="radio">
+                        <label for="256gb">256GB</label>
+                    </div>
 
-                    <input type="radio" name="storage" id="512gb" value="512"> 
-                    <label for="512gb"></label>512 GB</label>
+                    <div class="storage-container">
+                        <input type="radio" id="512gb"  name="radio">
+                        <label for="512gb">512GB</label>
+                    </div>
                 </div>
                 
                 <div class="color">   
                     <span class="color-title">Color</span> 
                     <input type="radio" name="color" id="red" value="red"> 
+                    <label for="red">Red</label>
                     <input type="radio" name="color" id="green" value="green"> 
+                    <label for="green">Green</label>
                     <input type="radio" name="color" id="blue" value="blue">
+                    <label for="blue">Blue</label>
                 </div>
                 
                 <div class="choose">
@@ -259,7 +267,10 @@
                     </div>
                 </div>
             </div>          
-        </div>      
+        </div> 
+        <div class="viewmore">
+            <a href="product.html" class="btn">View More</a>
+        </div>
     </div>
 
     

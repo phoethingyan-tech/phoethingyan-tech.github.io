@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRO Mobile</title>
     <link rel="stylesheet" href="../CSS/buynow.css">
+    <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -90,28 +91,28 @@
             </div>
             <div class="payment-container">
                 <div class="payment">
-                    <input type="checkbox">
-                    <span>KBZ Pay</span>
+                    <input type="radio" id="kbz" name="radio">
+                    <label for="kbz">KBZ Pay</label>
                     <img src="../Images/kpay.PNG" alt="">
                 </div>
 
                 <div class="payment">
-                    <input type="checkbox">
-                    <span>Wave Pay</span>
+                    <input type="radio" id="wave" name="radio">
+                    <label for="wave">Wave Pay</label>
                     <img src="../Images/wave.png" alt="">
                 </div>
 
                 <div class="payment">
-                    <input type="checkbox">
-                    <span>Other Payment</span>                
+                    <input type="radio" id="other-payment" name="radio">
+                    <label for="other-payment">Other Payment</label>                
                 </div>
 
                 <div class="payment-note">   
                     <span>Order မတင်မီ အချက်အလက်များကို သေချာအောင်စစ်ဆေးပေးပါခင်ဗျာ။ ရွေးချယ်မှုမှားယွင်းခြင်းများအတွက် တာဝန်မယူပေးနိုင်ပါခင်ဗျာ။</span>
                 </div>
                 <div class="accept-condition">
-                    <input type="checkbox">
-                    <span>I have read and agree to the website terms and Conditions.</span>
+                    <input type="checkbox" id="accept-checkbox">
+                    <label for="accept-checkbox">I have read and agree to the website terms and Conditions.</label>
                 </div>                
                 <a href="">Place Order</a>
             </div>
