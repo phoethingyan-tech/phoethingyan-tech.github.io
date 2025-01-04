@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Update-registration {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <section id="add-registration">
+        <div class="add-form">
+            <h1>Add Student Registration</h1>
+            Name : <input type="text" name="name" id="name">
+            <br><br>
+            Email : <input type="email" name="email" id="email">
+            <br><br>
+            Phone : <input type="text" name="phone" id="phone">
+            <br><br>
+            Years : <select name="years" id="years">
+                    <option value="">Choose Year</option>
+                    </select>
+            <br><br>       
+            <button class="add">Add</button>
+        </div>
+
+        <table align="left" border="1" cellspacing="0" cellpadding="30">
+            <ul>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Year</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Hla Hla</td>
+                    <td>mgmg@gmail.com</td>
+                    <td>0977721479</td>
+                    <td>First</td>
+                    <td><button id="edit">Edit</button> <button id="delete">Delete</button></td>
+                </tr>
+            </ul>
+        </table>
+    </section>
+
+    <section id="Update-registration">
+        <div class="edit-form">
+            <h1>Update Student Registration</h1>
+            Name : <input type="text" name="name" id="name">
+            <br><br>
+            Email : <input type="email" name="email" id="email">
+            <br><br>
+            Phone : <input type="text" name="phone" id="phone">
+            <br><br>
+            Years : <select name="years" id="years">
+                    <option value="">Choose Year</option>
+                    </select>
+            <br><br>       
+            <button class="update">Update</button>
+        </div>
+
+        <table align="left" border="1" cellspacing="0" cellpadding="30">
+            <ul>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Year</th>
+                    <th>Action</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Hla Hla</td>
+                    <td>mgmg@gmail.com</td>
+                    <td>0977721479</td>
+                    <td>First</td>
+                    <td><button id="edit">Edit</button> <button id="delete">Delete</button></td>
+                </tr>
+            </ul>
+        </table>
+    </section>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>        
+        // $('#Update-registration').hide();
+        $(document).ready(function(){            
+            $('#edit').click(function(){
+                $('#add-registration').hide();
+                $('#Update-registration').show();
+            })  
+            
+            $('.update').click(function(){
+                $('#Update-registration').hide();
+                $('#add-registration').show();
+                
+            }) 
+        })
+    </script>
+</body>
+</html>
