@@ -44,7 +44,7 @@
         </tbody>
     </table>
 
-    <section id="Update-registration">
+    <!-- <section id="Update-registration">
         <div class="edit-form">
             <h1>Update Student Registration</h1>
             Name : <input type="text" name="name" id="name">
@@ -59,34 +59,58 @@
             <br><br>       
             <button class="update">Update</button>
         </div>        
-    </section>
+    </section> -->
 
     <script src="jquery-3.7.1.min.js"></script>
     <script>        
        
         $(document).ready(function(){    
             $('#Update-registration').hide();
-            let data = '';
-            let no = 1;
+            
             $('#add').click(function(){
+                //input က  ဒေတာတွေကို လက်ခံ
                 let name = $('#name').val();
                 let email = $('#email').val();
                 let phone = $('#phone').val();
                 let years = $('#years').val();
+                //localStorage.setItem(key,dataString) -> Data ထည့်
+                // localStorage.getItem(key) -> localStorage ထဲက data ကို ရယူချင်ရင်သုံး
 
-                console.log(name,email,phone,years);
-                data += `<tr>
-                        <td>${no++}</td>
-                        <td>${name}</td>
-                        <td>${email}</td>
-                        <td>${phone}</td>
-                        <td>${years} Year</td>
-                        <td>
-                            <button>Edit</button>
-                            <button>Delete</button>    
-                        </td>
-                    </tr>`;
-                    $('#stu-add').html(data);
+                //လက်ခံထားတဲ့ Data တွေကို Object တည်ဆောက်
+                let students = {
+                    stu_name : name,
+                    stu_email : email,
+                    stu_phone : phone,
+                    stu_year : years
+                }
+                console.log(students);
+                console.log(students.stu_year);
+
+                //localstorage ထဲက Data ကို လှမ်းယူမယ်
+
+                let studentString = localStorage.getItem('students');
+
+                let studentArray;
+                if(studentString == null) {
+                    studentArray=[];
+                }
+                else {
+                    studentArray = JSON.parse(studentString);
+                }
+                studentArray.push(students);
+                console.log(studentArray);
+
+                //Object တွေကို String ပြောင်း
+                let studentData = JSON.stringify(studentArray);
+                // console.log(studentData);
+
+                // LocalStorage ထဲကိုထည့်
+                localStorage.setItem('students',studentData);
+
+                $('#name').val('');
+                $('#email').val('');
+                $('#phone').val('');
+                $('#years').val('');
             });
 
             // $('#edit').click(function(){
