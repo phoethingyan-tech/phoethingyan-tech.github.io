@@ -27,6 +27,28 @@
         </div>        
     </section>
 
+    <section id="Update-registration">
+        <div class="edit-form">
+            <h1>Update Student Registration</h1>
+            <input type="hidden" name="" id="edit-key">
+            Name : <input type="text" name="edit-name" id="edit-name">
+            <br><br>
+            Email : <input type="email" name="edit-email" id="edit-email">
+            <br><br>
+            Phone : <input type="text" name="edit-phone" id="edit-phone">
+            <br><br>
+            Years : <select name="edit-years" id="edit-years">
+                    <option value="">Choose Year</option>
+                    <option value="First">First Year</option>
+                    <option value="Second">Second Year</option>
+                    <option value="Third">Third Year</option>
+                    <option value="Final">Final Year</option>
+                    </select>
+            <br><br>       
+            <button id="update">Update</button>
+        </div>        
+    </section>
+
     <h2>Student List</h1>
     <table align="left" border="1" cellspacing="0" cellpadding="30">
         <thead>
@@ -39,40 +61,26 @@
                 <th>Action</th>
             </tr>
         </thead>
-        <tbody id="stu-add">
+        <tbody id="stu-Table">
             
         </tbody>
     </table>
 
-    <!-- <section id="Update-registration">
-        <div class="edit-form">
-            <h1>Update Student Registration</h1>
-            Name : <input type="text" name="name" id="name">
-            <br><br>
-            Email : <input type="email" name="email" id="email">
-            <br><br>
-            Phone : <input type="text" name="phone" id="phone">
-            <br><br>
-            Years : <select name="years" id="years">
-                    <option value="">Choose Year</option>
-                    </select>
-            <br><br>       
-            <button class="update">Update</button>
-        </div>        
-    </section> -->
+    
 
     <script src="jquery-3.7.1.min.js"></script>
     <script>        
        
         $(document).ready(function(){    
             $('#Update-registration').hide();
-            
+            getData();
             $('#add').click(function(){
                 //input က  ဒေတာတွေကို လက်ခံ
                 let name = $('#name').val();
                 let email = $('#email').val();
                 let phone = $('#phone').val();
                 let years = $('#years').val();
+                
                 //localStorage.setItem(key,dataString) -> Data ထည့်
                 // localStorage.getItem(key) -> localStorage ထဲက data ကို ရယူချင်ရင်သုံး
 
@@ -86,7 +94,7 @@
                 console.log(students);
                 console.log(students.stu_year);
 
-                //localstorage ထဲက Data ကို လှမ်းယူမယ်
+                //localstorage ထဲက Data ကို လှမ်းယူမယ် 
 
                 let studentString = localStorage.getItem('students');
 
@@ -106,24 +114,111 @@
 
                 // LocalStorage ထဲကိုထည့်
                 localStorage.setItem('students',studentData);
-
                 $('#name').val('');
                 $('#email').val('');
                 $('#phone').val('');
                 $('#years').val('');
+
+                getData();
             });
 
-            // $('#edit').click(function(){
-            //     $('#add-registration').hide();
-            //     $('#Update-registration').show();
-            // })  
-            
-            // $('.update').click(function(){
-            //     $('#Update-registration').hide();
-            //     $('#add-registration').show();
-                
-            // }) 
-        })
+            function getData() {
+                let stuString = localStorage.getItem('students');
+                let stuArray = JSON.parse(stuString);
+                console.log(stuArray);
+
+                //i = key
+                //v = value
+
+                let no = 1;
+                let data = '';
+                $.each(stuArray, function(i,v) {
+                    let name = v.stu_name;
+                    let email = v.stu_email;
+                    let phone = v.stu_phone;
+                    let years = v.stu_year;
+                    
+                    data += `<tr>
+                        <td>${no++}</td>
+                        <td>${name}</td>
+                        <td>${email}</td>
+                        <td>${phone}</td>
+                        <td>${years} Year</td>
+                        <td>
+                            <button data-key="${i}" class="edit" data-name="${name}" data-email="${email}" data-phone="${phone}" data-years="${years}" >Edit</button>
+                            <button data-key="${i}" class="delete">Delete</button>
+                        </td>
+                    </tr>`;
+                });
+                $('#stu-Table').html(data);
+            }
+
+            //Delete Section
+
+            $('#stu-Table').on('click','.delete',function() {
+                let key = $(this).data('key');
+                console.log(key);
+
+                let ans = confirm("Are you sure delete?");
+                console.log(ans);
+
+                if(ans) {
+                    let stuString = localStorage.getItem('students');
+                    if(stuString) {
+                        let stuArray = JSON.parse(stuString);
+                        stuArray.splice(key,1); //spliace(start,number)
+
+                        let stuData = JSON.stringify(stuArray);
+                        localStorage.setItem('students',stuData);
+                        getData();
+                    }
+                }
+            });
+
+            // Edit Selector
+            $('#stu-Table').on('click','.edit', function() {
+                $('#add-registration').hide();                
+                $('#Update-registration').show();
+
+                let key = $(this).data('key');
+                let edit_name = $(this).data('name');
+                let edit_email = $(this).data('email');
+                let edit_phone = $(this).data('phone');
+                let edit_years = $(this).data('years');
+                console.log(edit_name, edit_email, edit_phone, edit_years);
+
+                $('#edit-key').val(key);
+                $('#edit-name').val(edit_name);
+                $('#edit-email').val(edit_email);
+                $('#edit-phone').val(edit_phone);
+                $('#edit-years').val(edit_years);
+            });
+
+            //update selection
+            $('#update').click(function() {
+                let  ukey = $('#edit-key').val();
+                let  uname = $('#edit-name').val();
+                let  uemail = $('#edit-email').val();
+                let  uphone = $('#edit-phone').val();
+                let  uyears = $('#edit-years').val();
+                console.log(ukey, uname, uemail,uphone,uyears);
+
+                let stuString = localStorage.getItem('students');
+                if(stuString) {
+                    let stuArray = JSON.parse(stuString);
+                    stuArray[ukey].stu_name = uname;
+                    stuArray[ukey].stu_email = uemail;
+                    stuArray[ukey].stu_phone = uphone;
+                    stuArray[ukey].stu_year = uyears;
+
+                    let stuData = JSON.stringify(stuArray);
+                    localStorage.setItem('students',stuData);
+                    getData();
+                    $('#add-registration').show();                
+                    $('#Update-registration').hide();
+                }
+            });
+        });
     </script>
 </body>
 </html>
