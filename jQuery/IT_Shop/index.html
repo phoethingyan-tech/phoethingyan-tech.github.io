@@ -18,7 +18,7 @@
             <a href=""><h4>Home</h4></a>
             <div class="card">
                 <a href=""><i  class="material-symbols-outlined">shopping_cart</i></a>
-                <span>0</span>
+                <span id="item-count">0</span>
             </div>
             
         </div>
@@ -30,7 +30,7 @@
             <div>
                 <h3>Acer Latop</h3>
                 <p>Price : 2,300,000 MMK</p>
-                <button>Add to Card</button>
+                <button class="addToCart" data-id="1" data-name="Acer Laptop" data-price="2300000">Add to Card</button>
             </div>            
         </div> 
         <div class="items-container">
@@ -38,7 +38,7 @@
             <div>
                 <h3>Dell Latop</h3>
                 <p>Price : 2,500,000 MMK</p>
-                <button>Add to Card</button>
+                <button class="addToCart" data-id="2" data-name="Dell Laptop" data-price="2500000">Add to Card</button>
             </div>            
         </div> 
 
@@ -47,7 +47,7 @@
             <div>
                 <h3>Lenovo Latop</h3>
                 <p>Price : 1,400,000 MMK</p>
-                <button>Add to Card</button>
+                <button class="addToCart" data-id="3" data-name="Lenovo Laptop" data-price="1400000">Add to Card</button>
             </div>            
         </div> 
 
@@ -56,7 +56,7 @@
             <div>
                 <h3>Mac Book Pro</h3>
                 <p>Price : 5,200,000 MMK</p>
-                <button>Add to Card</button>
+                <button class="addToCart" data-id="4" data-name="Mac Book Pro" data-price="5200000">Add to Card</button>
             </div>            
         </div> 
 
@@ -97,10 +97,8 @@
     </section>
 
 
-    <script src=""></script>
-    <script>
-
-    </script>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="scritpt.js"></script>
     
 </body>
 </html>
