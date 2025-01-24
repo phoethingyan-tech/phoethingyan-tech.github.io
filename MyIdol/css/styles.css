@@ -103,3 +103,11 @@
     -ms-transform: scale(1);
     transform: scale(1);
   }
+
+  /* R.I.P */
+  .bg-img {
+    background-image: url("../images/Banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
