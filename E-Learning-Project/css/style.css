@@ -7,10 +7,26 @@
     font-family: Poppins;
 }
 
-.normal-change {
-    transition: 0.5s;
+.normal-change{
+    transition: 0.7s;
 }
-.upper-change:hover {
-    transform: translateY(-7px);
-    transition: 0.5s ease-in-out;
+
+.upper-change:hover{
+    transform: translateY(-10px);
+    transition: 0.7s ease-in-out;
+}
+
+.img-profile {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 0;
+    padding: 2px;
+}
+
+.img-certificate {
+    width: 70px;
+    height: 70px;
+    border: 0;
+    
 }
