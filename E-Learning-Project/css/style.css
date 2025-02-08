@@ -7,7 +7,7 @@
     font-family: Poppins;
 }
 
-.normal-change{
+.upper-change{
     transition: 0.7s;
 }
 
@@ -27,6 +27,5 @@
 .img-certificate {
     width: 70px;
     height: 70px;
-    border: 0;
-    
+    border: 0;    
 }
