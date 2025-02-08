@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Project</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="aos/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg bg-light py-3 shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="navbar-brand fs-4">E-Learning</h1>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto nav-underline">
+                    <li class="nav-item">
+                        <a class="nav-link fs-6" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6" href="categories.html">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6" href="teacher.html">Teacher</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-6 me-3 active" href="#">Contact</a>
+                    </li>                                   
+                </ul>
+                <a class="nav-link me-3" href="#"><i class="bi bi-person-fill fs-2"></i></a>
+                <a href=""><button class="btn btn-primary">Enroll Now <i class="bi bi-arrow-right"></i></button></a>
+            </div>
+        </div>        
+    </nav>  
+
+    <!-- Feedback Form -->
+    <div class="container mt-5">        
+        <div class="row d-flex justify-content-between">
+            <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-in"  data-aos-duration="1000">     
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.212462397379!2d96.09010337439655!3d21.887892857719006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb7338269f21a3%3A0x89edbf837c8c1af8!2zUHJvIFNlcnZpY2Uo4YCW4YCv4YCU4YC64YC44YCh4YCZ4YC74YCt4YCv4YC44YCZ4YC74YCt4YCv4YC44YCU4YC-4YCE4YC34YC6IOGAgOGAveGAlOGAuuGAleGAu-GAsOGAkOGArOGAoeGAkeGAsOGAuOGAleGAvOGAr-GAleGAvOGAhOGAuuKAjOGAm-GAseGAuCk!5e0!3m2!1smy!2sth!4v1738906179915!5m2!1smy!2sth" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>  
+            <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"  data-aos-duration="1800">
+                <div class="mb-3">
+                    <label for="name" class="form-label text-bolder">Name</label>
+                    <input type="name" class="form-control" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label text-bolder">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="stu-id" class="form-label text-bolder">Students ID</label>
+                    <input type="number" class="form-control" id="stu-id" placeholder="Enter Students ID">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label text-bolder">Message</label>
+                    <textarea class="form-control" id="message" rows="3"></textarea>
+                </div>  
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>            
+            </div>
+        </div>        
+    </div>
+
+    <!-- <footer class="py-4 text-center text-light bg-dark">
+        <p>@Copyright All Rights Reserved | E-Learning</p>
+    </footer> -->
+
+    <!-- scroll-behavior -->
+    <script src="aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
