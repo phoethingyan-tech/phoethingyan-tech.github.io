@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="aos/aos.css">
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -38,19 +39,19 @@
                     </li>                                   
                 </ul>
                 <a class="nav-link me-3" href="#"><i class="bi bi-person-fill fs-2"></i></a>
-                <button class="btn btn-primary">Enroll Now <i class="bi bi-arrow-right"></i></button>
+                <a href=""><button class="btn btn-primary">Enroll Now <i class="bi bi-arrow-right"></i></button></a>
             </div>
         </div>        
     </nav>  
        
     <!-- Computer Basic Course -->
     <div class="container mt-5">
-        <div class="d-flex justify-content-center mb-5">
+        <div class="d-flex justify-content-center mb-5" data-aos="fade-in"  data-aos-duration="1000">
             <i class="bi bi-pc-display-horizontal fs-3"></i>
             <h2 class="ms-3 me-3">Computer Basic Course</h2>
             <i class="bi bi-pc-display-horizontal fs-3"></i>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up"  data-aos-duration="1000">
             <!-- Basic Foundation -->
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4 normal-change upper-change">
                 <div class="card shadow">
@@ -224,12 +225,12 @@
 
     <!-- Programming Course -->
     <div class="container mt-5">
-        <div class="d-flex justify-content-center mb-5">
+        <div class="d-flex justify-content-center mb-5" data-aos="fade-in"  data-aos-duration="1000">
             <i class="bi bi-code fs-3"> </i> 
             <h2 class="ms-3 me-3"> Programming Course </h2>
             <i class="bi bi-code-slash fs-3"> </i>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up"  data-aos-duration="1000">
             <!-- web development -->
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4 normal-change upper-change">
                 <div class="card shadow">
@@ -485,12 +486,12 @@
 
     <!-- Content Creator Course -->
     <div class="container mt-5">
-        <div class="d-flex justify-content-center mb-5">
+        <div class="d-flex justify-content-center mb-5" data-aos="fade-in"  data-aos-duration="1000">
             <i class="bi bi-camera fs-3"></i>
             <h2 class="ms-3 me-3">Content Creator Course</h2>
             <i class="bi bi-camera-reels fs-3"></i>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up"  data-aos-duration="1000">
             <!-- Photoshop Foundation -->
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4 normal-change upper-change">
                 <div class="card shadow">
@@ -636,12 +637,12 @@
 
     <!-- Electronic Course -->
     <div class="container mt-5">
-        <div class="d-flex justify-content-center mb-5">
+        <div class="d-flex justify-content-center mb-5" data-aos="fade-in"  data-aos-duration="1000">
             <!-- <i class="bi bi-camera fs-3"></i> -->
             <h2 class="ms-3 me-3">Electronic Course</h2>
             <!-- <i class="bi bi-camera-reels fs-3"></i> -->
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up"  data-aos-duration="1000">
             <!-- Basic Electronic Class -->
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4 normal-change upper-change">
                 <div class="card shadow">
@@ -730,12 +731,10 @@
 
     <!-- Computer A+ Course -->
     <div class="container mt-5">
-        <div class="d-flex justify-content-center mb-5">
-            <!-- <i class="bi bi-camera fs-3"></i> -->
+        <div class="d-flex justify-content-center mb-5" data-aos="fade-in"  data-aos-duration="1000">            
             <h2 class="ms-3 me-3">Computer A<sup>+</sup> Course</h2>
-            <!-- <i class="bi bi-camera-reels fs-3"></i> -->
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up"  data-aos-duration="1000">
             <!-- Computer A+ Hardware Class -->
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4 normal-change upper-change">
                 <div class="card shadow">
@@ -799,12 +798,12 @@
 
     <!-- Phone Service Course -->
     <div class="container mt-5">
-        <div class="d-flex justify-content-center mb-5">
+        <div class="d-flex justify-content-center mb-5" data-aos="fade-in"  data-aos-duration="1000">
             <i class="bi bi-phone fs-3"></i>
             <h2 class="ms-3 me-3">Phone Service Course</h2>
             <i class="bi bi-phone fs-3"></i>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" data-aos="fade-up"  data-aos-duration="1000">
             <!-- Phone Service Class -->
             <div class="col-lg-4 col-md-6 col-sm-12 mb-4 normal-change upper-change">
                 <div class="card shadow">
@@ -927,5 +926,11 @@
     <footer class="py-4 text-center text-light bg-dark">
         <p>@Copyright All Rights Reserved | E-Learning</p>
     </footer>
+
+    <!-- scroll-behavior -->
+    <script src="aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

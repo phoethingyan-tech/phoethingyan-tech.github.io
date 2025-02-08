@@ -6,6 +6,7 @@
     <title>E-Learning Project</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="aos/aos.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </head>
@@ -38,7 +39,7 @@
                     </li>                                   
                 </ul>
                 <a class="nav-link me-3" href="#"><i class="bi bi-person-fill fs-2"></i></a>
-                <button class="btn btn-primary">Enroll Now <i class="bi bi-arrow-right"></i></button>
+                <a href=""><button class="btn btn-primary">Enroll Now <i class="bi bi-arrow-right"></i></button></a>
             </div>
         </div>         
     </nav>  
@@ -46,8 +47,8 @@
     <!-- Welcome page -->
     <div class="container mt-5">        
         <div class="row d-flex justify-content-between">
-            <img src="images/WebDevelopment.jpeg" class="img-fluid rounded col-lg-6 col-md-12 col-sm-12 mb-3" alt="">
-            <div class="col-lg-6 col-md-12 col-sm-12">
+            <img src="images/WebDevelopment.jpeg" class="img-fluid rounded col-lg-6 col-md-12 col-sm-12 mb-3" alt="" data-aos="fade-in"  data-aos-duration="600">
+            <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"  data-aos-duration="700">
                 <h2 class="pb-2">Welcome To E-Learning School</h2>
                 <p class="pb-2">This is an online training school that is primarily aimed at areas in Myanmar that do not have access to modern technology.</p>
                 <p class="pb-2">We aim to provide access to modern technologies at affordable prices, and to provide free education to those who cannot afford it.</p>
@@ -76,7 +77,7 @@
     <!-- Certificate Students -->
     <div class="container mt-5">        
         <div class="d-flex justify-content-center my-5">
-            <h2 class="ms-3 me-3">Certificate Students </h2>
+            <h2 class="ms-3 me-3">Certificated Students </h2>
         </div>
         <div class="row">
             <!-- students -->
@@ -632,10 +633,14 @@
         </div>
     </div>
 
-    
-    
     <footer class="py-4 text-center text-light bg-dark">
         <p>@Copyright All Rights Reserved | E-Learning</p>
     </footer>
+
+    <!-- scroll-behavior -->
+    <script src="aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="aos/aos.css" />
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </head>
 <body>
     <nav class="navbar sticky-top navbar-expand-lg bg-light py-3 shadow">
@@ -38,14 +40,14 @@
                     </li>                                   
                 </ul>
                 <a class="nav-link me-3" href="#"><i class="bi bi-person-fill fs-2"></i></a>
-                <button class="btn btn-primary">Enroll Now <i class="bi bi-arrow-right"></i></button>
+                <a href=""><button class="btn btn-primary">Enroll Now <i class="bi bi-arrow-right"></i></button></a>
             </div>
         </div>        
     </nav>  
     <div class="container my-5">
         <div class="row">
             <!-- Computer Basic Course -->
-            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4" data-aos="fade-in"  data-aos-duration="500">
                 <div class="card shadow normal-change upper-changes">
                     <h3 class="card-title py-3 ps-2 bg-primary text-light card-img-top img-fluid">Computer Basic Course</h3>                    
                     <div class="accordion" id="myAccordion-computer-basic">
@@ -143,7 +145,7 @@
             </div>
 
             <!-- Content Creator Course -->
-            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4" data-aos="fade-up"  data-aos-duration="500">
                 <div class="card shadow">
                     <h3 class="card-title py-3 ps-2 bg-primary text-light card-img-top img-fluid">Content Creator Course</h3>                    
                     <div class="accordion" id="myAccordion-content-creator">
@@ -227,7 +229,7 @@
             
 
             <!-- Electronic Course -->
-            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4" data-aos="fade-up"  data-aos-duration="500">
                 <div class="card shadow">
                     <h3 class="card-title py-3 ps-2 bg-primary text-light card-img-top img-fluid">Electronic Course</h3>                    
                     <div class="accordion" id="myAccordion-electronic">
@@ -280,7 +282,7 @@
             </div>
 
             <!-- Computer A+ Course -->
-            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4" data-aos="fade-up"  data-aos-duration="500">
                 <div class="card shadow">
                     <h3 class="card-title py-3 ps-2 bg-primary text-light card-img-top img-fluid">Computer A+ Course</h3>                    
                     <div class="accordion" id="myAccordion-aplus">
@@ -318,7 +320,7 @@
             </div>
 
             <!-- Phone Service Course -->
-            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4" data-aos="fade-up"  data-aos-duration="500">
                 <div class="card shadow">
                     <h3 class="card-title py-3 ps-2 bg-primary text-light card-img-top img-fluid">Phone Service Course</h3>                   
                     <div class="accordion" id="myAccordion-phone-service">
@@ -386,7 +388,7 @@
             </div>
 
             <!-- Programming Course -->
-            <div class="col-lg-12 col-md-12 col-sm-12 mb-4">
+            <div class="col-lg-12 col-md-12 col-sm-12 mb-4" data-aos="fade-up"  data-aos-duration="500">
                 <div class="card shadow">
                     <h3 class="card-title py-3 ps-2 bg-primary text-light card-img-top img-fluid">Programming Course</h3>                    
                     <div class="accordion" id="myAccordion">
@@ -533,5 +535,11 @@
     <footer class="py-4 text-center text-light bg-dark">
         <p>@Copyright All Rights Reserved | E-Learning</p>
     </footer>
+    
+    <!-- scroll-behavior -->
+    <script src="aos/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
