@@ -130,3 +130,8 @@
 .sub-menu-link:hover p {
     font-weight: 600;
 }
+
+/* Text Effect */
+.text-hover:hover {
+    color: blue;
+}
