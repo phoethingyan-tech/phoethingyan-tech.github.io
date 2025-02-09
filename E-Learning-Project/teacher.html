@@ -37,11 +37,50 @@
                     <li class="nav-item">
                         <a class="nav-link fs-6 me-3" href="contact.html">Contact</a>
                     </li>                                   
-                </ul>
-                <a class="nav-link me-3" href="#"><i class="bi bi-person-fill fs-2"></i></a>
-                <a href=""><button class="btn btn-primary">Enroll Now <i class="bi bi-arrow-right"></i></button></a>
+                </ul>                                
             </div>
-        </div>        
+            <img src="images/profile.png" alt="" class="user-pic img-fluid me-4" onclick="toggleMenu()">
+            <a href="register.html"><button class="btn btn-primary">Register Now <i class="bi bi-arrow-right"></i></button></a>
+            
+            <!-- sub user-info menu -->
+            <div class="sub-menu-wrap navbar-collapse" id="subMenu">
+                <div class="sub-menu rounded">
+                    <div class="user-info">
+                        <img src="images/profile.png" alt="">
+                        <h3 class="fs-5 text-bolder">Phoe Thingyan</h3>
+                    </div>
+                    <hr>    
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="images/icon/profile.png" alt="">
+                        <p>Sign In</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="images/icon/profile.png" alt="">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="images/icon/setting.png" alt="">
+                        <p>Settings & Privacy</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="images/icon/help.png" alt="">
+                        <p>Help & Support</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="images/icon/logout.png" alt="">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>         
     </nav>  
     <!-- Our Teacher-->
     <div class="container mt-5">
@@ -197,45 +236,54 @@
                 <div class="col-lg-4 col-md-6 col-sm-12 text-start">
                     <h4 class="mb-0 pb-0 pt-3">Quick Link</h4>
                     <hr class="mb-3 border border-danger w-25 pb-50 mt-0">
-                    <h6 class="pb-2"><a href="categories.html" class="text-decoration-none text-light link-expand">> Categories</a></h6>
-                    <h6 class="pb-2"><a href="courses.html" class="text-decoration-none text-light link-expand">> Courses</a></h6>
-                    <h6 class="pb-2"><a href="teacher.html" class="text-decoration-none text-light link-expand">> Teacher</a></h6>
-                    <h6 class="pb-2"><a href="about.html" class="text-decoration-none text-light link-expand">> About</a></h6>
-                    <h6 class="pb-2"><a href="contact.html" class="text-decoration-none text-light link-expand">> Contact</a></h6>
+                    <h6 class="pb-2 link-expand"><a href="categories.html" class="text-decoration-none text-light"><span>></span> Categories</a></h6>
+                    <h6 class="pb-2 link-expand"><a href="courses.html" class="text-decoration-none text-light">> Courses</a></h6>
+                    <h6 class="pb-2 link-expand"><a href="teacher.html" class="text-decoration-none text-light">> Teacher</a></h6>
+                    <h6 class="pb-2 link-expand"><a href="about.html" class="text-decoration-none text-light">> About</a></h6>
+                    <h6 class="pb-2 link-expand"><a href="contact.html" class="text-decoration-none text-light">> Contact</a></h6>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 text-start">
                     <h4 class="mb-0 pb-0 pt-3">Contact Us</h4>
                     <hr class="mb-3 border border-danger w-25 pb-50 mt-0">
                     <div class="pb-2">
-                        <i class="bi bi-geo-alt-fill"> </i><span class="text-decoration-none text-light">78<sup>th</sup>, 135-135, Mandalay</span>
+                        <i class="bi bi-geo-alt-fill pe-3"></i><span class="text-decoration-none text-light">78<sup>th</sup>, 135-135, Mandalay</span>
                     </div>
                     <div class="pb-2">
-                        <i class="bi bi-telephone"> </i><a href="tel:+959252608293" class="text-decoration-none text-light">+959252608293</a>
+                        <i class="bi bi-telephone pe-3"></i><a href="tel:+959252608293" class="text-decoration-none text-light">+959252608293</a>
                     </div>
                     <div class="pb-2">
-                        <i class="bi bi-envelope"> </i><span class="text-decoration-none text-light"> e-learning.mm@gmail.com</span>
+                        <i class="bi bi-envelope pe-3"></i><span class="text-decoration-none text-light">e-learning.mm@gmail.com</span>
                     </div>
                 </div>            
                 <div class="col-lg-4 col-md-6 col-sm-12 text-start">
                     <h4 class="mb-0 pb-0 pt-3">Follow Us</h4>
                     <hr class="mb-3 border border-danger w-25 pb-50 mt-0">
-                    <a href=""><i class="bi bi-facebook me-3 fs-2 text-decoration-none text-light"></i></a>
-                    <a href=""><i class="bi bi-twitter me-3 fs-2 text-decoration-none text-light"></i></a>
-                    <a href=""><i class="bi bi-instagram me-3 fs-2 text-decoration-none text-light"></i></a>
-                    <a href=""><i class="bi bi-youtube me-3 fs-2 text-decoration-none text-light"></i></a>
+                    <a href=""><i class="bi bi-facebook me-3 fs-2 text-decoration-none text-light link-expand"></i></a>
+                    <a href=""><i class="bi bi-twitter me-3 fs-2 text-decoration-none text-light link-expand"></i></a>
+                    <a href=""><i class="bi bi-instagram me-3 fs-2 text-decoration-none text-light link-expand"></i></a>
+                    <a href=""><i class="bi bi-youtube me-3 fs-2 text-decoration-none text-light link-expand"></i></a>
                 </div>
             </div>
         </div>
         <div class="container">
             <hr class="border">
-            <p class="my-3"><i class="bi bi-c-circle"></i><a href="e-learning-mm.com" class="text-light"> E-Learning Myanmar,</a> All Rights Reserved. Design By <a href="phoethingyan-tech.github.io" class="text-light"> PhoeThingyan</a></p>
+            <p class="my-3 text-center"><i class="bi bi-c-circle"></i><a href="e-learning-mm.com" class="text-light"> E-Learning Myanmar,</a> All Rights Reserved. Design By <a href="phoethingyan-tech.github.io" class="text-light"> PhoeThingyan</a></p>
         </div>
     </footer>
 
     <!-- scroll-behavior -->
     <script src="aos/aos.js"></script>
     <script>
-      AOS.init();
+        AOS.init();             
+    </script>
+
+    <!-- User Account Detail -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>        
+        let subMenu = document.getElementById("subMenu");
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        } 
     </script>
 </body>
 </html>

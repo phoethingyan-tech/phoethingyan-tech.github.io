@@ -35,12 +35,12 @@
                         <a class="nav-link fs-6" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-6 me-3 active" href="#">Contact</a>
+                        <a class="nav-link fs-6 me-3" href="contact.html">Contact</a>
                     </li>                                   
                 </ul>                                
             </div>
             <img src="images/profile.png" alt="" class="user-pic img-fluid me-4" onclick="toggleMenu()">
-            <a href="register.html"><button class="btn btn-primary">Register Now <i class="bi bi-arrow-right"></i></button></a>
+            <a href="#"><button class="btn btn-primary">Register Now <i class="bi bi-arrow-right"></i></button></a>
             
             <!-- sub user-info menu -->
             <div class="sub-menu-wrap navbar-collapse" id="subMenu">
@@ -82,69 +82,53 @@
         </div>         
     </nav>  
 
-    <!-- Contact Item -->    
-    <h2 class="py-5 mb-5 text-center text-white bg-primary">Contact Us</h2>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 col-sm-12 my-2">
-                <div class="card border-radius h-100 text-center ps-2 pe-2 py-3">
-                    <i class="bi bi-geo-alt-fill text-primary fs-2 mb-3"></i>
-                    <h5>Address</h5>
-                    <p>78<sup>th</sup>, 135-136, Mandalay</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 my-2">
-                <div class="card border-radius h-100 text-center ps-2 pe-2 py-3">
-                    <a href="tel:+959252608293" class="text-dark" style="text-decoration: none;"></a>
-                        <i class="bi bi-telephone-fill text-primary fs-2 mb-3"></i>
-                        <h5>Phone</h5>
-                        <p>+959 252 608 293 </p>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 my-2">
-                <div class="card border-radius h-100 text-center ps-2 pe-2 py-3">
-                    <i class="bi bi-envelope-at-fill text-primary fs-2 mb-3"></i>
-                    <h5>Email</h5>
-                    <p>e-learning.mm@gmail.com</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12 my-2">
-                <div class="card border-radius h-100 text-center ps-2 pe-2 py-3">
-                    <i class="bi bi-clock-fill text-primary fs-2 mb-3"></i>
-                    <h5>Opening Hour</h5>
-                    <p>9:00 AM - 7:00 PM</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!-- Contact Form -->
+    <h2 class="py-5 mb-5 text-center text-white bg-primary">Student Registration</h2>
     <div class="container my-5">        
         <div class="row d-flex justify-content-between">
             <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-in"  data-aos-duration="1000">     
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.212462397379!2d96.09010337439655!3d21.887892857719006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30cb7338269f21a3%3A0x89edbf837c8c1af8!2zUHJvIFNlcnZpY2Uo4YCW4YCv4YCU4YC64YC44YCh4YCZ4YC74YCt4YCv4YC44YCZ4YC74YCt4YCv4YC44YCU4YC-4YCE4YC34YC6IOGAgOGAveGAlOGAuuGAleGAu-GAsOGAkOGArOGAoeGAkeGAsOGAuOGAleGAvOGAr-GAleGAvOGAhOGAuuKAjOGAm-GAseGAuCk!5e0!3m2!1smy!2sth!4v1738906179915!5m2!1smy!2sth" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img src="images/register.jpeg" alt="" class="img-fluid mb-4">
             </div>  
-            <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"  data-aos-duration="1800">
-                <h2 class="text-start my-3">Feedback</h2>
-                <div class="mb-3">
+            <div class="col-lg-6 col-md-12 col-sm-12" data-aos="fade-up"  data-aos-duration="1800">                
+                <div class="mb-4">
                     <label for="name" class="form-label text-bolder">Name</label>
-                    <input type="name" class="form-control" id="name" placeholder="">
+                    <input type="name" class="form-control" id="name" placeholder="Enter Full Name">
                 </div>
-                <div class="mb-3">
+                <div class="mb-2">
                     <label for="email" class="form-label text-bolder">Email address</label>
-                    <input type="email" class="form-control" id="email" placeholder="">
+                    <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
                 </div>
-                <div class="mb-3">
-                    <label for="subject" class="form-label text-bolder">Subject</label>
-                    <input type="text" class="form-control" id="subject" placeholder="">
+                <div class="mb-4 d-flex justify-content-start"> 
+                    <input type="text" class="form-control w-50 me-3" id="email" placeholder="Enter OTP Code">
+                    <button class="btn btn-primary btn-sm">Get Code</button>
                 </div>
-                <div class="mb-3">
-                    <label for="message" class="form-label text-bolder">Message</label>
-                    <textarea class="form-control" id="message" rows="3"></textarea>
+                <div class="mb-4">
+                    <label for="course" class="form-label text-bolder">Choose Course</label>
+                    <select name="courses" id="courses" class="form-control">
+                        <option value="Computer Basic">Computer Basic</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Android Development">Android Development</option>
+                        <option value="Camera">Camera</option>
+                      </select>
+                </div>
+                <div class="mb-4">
+                    <label for="b-date" class="form-label text-bolder">Birthday</label>
+                    <input type="date" class="form-control" id="b-date" placeholder="">
+                </div>
+                <div class="mb-4">
+                    <label for="img" class="form-label text-bolder">Profile Image</label>
+                    <input type="file" class="form-control" id="img" placeholder="">
                 </div>  
-                <div class="mb-3">
-                    <button type="submit" class="btn btn-primary">Send</button>
+                <div class="mb-4">
+                    <label for="payment" class="form-label text-bolder me-4">Payment</label>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1">Kpay</label>
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-warning text-dark" for="btnradio2">Wave</label>
+                </div> 
+
+                <div class="mb-3"> 
+                    <button type="submit" class="btn btn-primary btn-lg form-control">Register</button>
                 </div>            
             </div>
         </div>        
