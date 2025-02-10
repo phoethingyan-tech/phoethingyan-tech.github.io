@@ -62,7 +62,7 @@ var swiper = new Swiper(".teacher-swiper", {
 
 // students Project
 var swiper = new Swiper(".stu-swiper", {
-    slidesPerView: 4,
+    slidesPerView: 3,
     centeredSlides: true,
     spaceBetween: 30,
     grabCursor: true,
@@ -79,10 +79,14 @@ var swiper = new Swiper(".stu-swiper", {
             slidesPerView: 2
         },
         992: {
-            slidesPerView: 4
+            slidesPerView: 3
         },
-    }
-  });
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 
 // certificate students
 var swiper = new Swiper(".stu-feedback", {
