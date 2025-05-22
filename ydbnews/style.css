@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'bold';
+  src: url('font/NotoSansMyanmar-ExtraBold.ttf') format('truetype');
+
+  font-family: 'regular';
+  src: url('font/NotoSansMyanmar-ExtraBold.ttf') format('truetype');
+}
+
+h1 {
+  font-family: 'bold', truetype-serif;
+}
+
+
+.bg-color-cover {
+    background-color: rgb(244, 243, 243);
+}
+
+.bg-color-nav {
+    background-color: rgb(254, 250, 250);
+}
+
+.bg-color-card {
+    background-color: rgb(255, 255, 255);
+}
+
+.bold-line {
+    height: 5px;
+    background-color: #006e7c;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.back-to-top:hover {
+  background-color: #0056b3;
+}
+
+.card-hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  transform: translateY(-5px);
+}
+
+@media (max-width: 576px) {
+  .card-sm-horizontal {
+    flex-direction: row !important;
+    align-items: center;
+  }
+
+  .card-sm-horizontal img {
+    width: 40%;
+    border-radius: 1rem 0 0 1rem !important;
+  }
+
+  .card-sm-horizontal .card-body {
+    width: 60%;
+    padding: 0.5rem;
+    text-align: right;
+  }
+
+  .card-sm-horizontal .btn {
+    justify-content: center !important; /* ← ပြင်လိုက်တာ */
+    display: flex;
+  }
+}
